@@ -1,0 +1,101 @@
+name,ring,quadrant,isNew,description
+Ag-grid,Adopt,Languages and Frameworks,false,JavaScript grid
+A11Y and ARIA,Explore,Techniques,false,"Accessibility, Adobe React Aria"
+Angular,Endure,Languages and Frameworks,false,Full-fledged framework for line-of-business SPA applications.
+Application Insights,Adopt,Tools,false,..excerpt also used in technology radar...
+Axure,Endure,Tools,false,..excerpt also used in technology radar...
+ASP.NET for frontend,Endure,Platforms,false,"ASP.NET is an open source web framework, created by Microsoft, for building modern web apps and services that run on macOS, Linux, Windows, and Docker. It can be used to build web frontends using Razor."
+Azure static web apps,Explore,Techniques,false,Automatically build and deploy full stack web apps to Azure; Azure Functions
+Bootstrap,Endure,Languages and Frameworks,false,"Still the number 1 library for web UI&apos;s, especially useful for administrative screens."
+Azure,Adopt,Platforms,false,..excerpt also used in technology radar...
+CDN,Adopt,Platforms,false,..excerpt also used in technology radar...
+Code splitting,Adopt,Techniques,false,(fe. Dynamic imports)
+CSharp,Adopt,Languages and Frameworks,false,"C# is a general-purpose, multi-paradigm programming language. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines."
+Content as a service,Adopt,Techniques,false,"JSS, Netlify-cms, BLS..."
+D3.js,Adopt,Languages and Frameworks,false,The library for advanced data visualization and animation.
+CSS,Adopt,Languages and Frameworks,false,"CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media."
+Deno,Explore,Tools,false,"JavaScript/TypeScript runtime built in Rust, secure, supports TypeScript out of the box"
+Dev containers,Adopt,Techniques,false,Developing inside a container to ensure an equal development environment for all developers.
+Docker containers,Adopt,Platforms,false,"For unit of deployment, linux, Azure Web Apps / kubernetes"
+DOTNET Core 6,Adopt,Platforms,false,..excerpt also used in technology radar...
+ElasticSearch,Adopt,Platforms,false,"Dutch company, local support, based on usage look at Azure Search"
+Esbuild,Explore,Tools,false,"build tool, fast build time"
+ESNext,Endure,Languages and Frameworks,false,The new version of JavaScript with way more powerful language constructs. 
+Figma for developers,Adopt,Tools,false,Figma is a web-based graphics editing and user interface design app.
+Fluent UI,Adopt,Languages and Frameworks,false,"Fluent UI is a collection of UX frameworks for creating beautiful, cross-platform apps that share code, design, and interaction behavior. It is created by Microsoft and used in all Microsoft tooling like Teams, PowerApps, Office tools."
+Formik,Endure,Languages and Frameworks,false,"React form builder, prefer react-hook-form or react-json-schema-form over Formik"
+Full Stack devs,Adopt,Techniques,false,Don&apos;t be scared of install complete platform and edit Razor views
+Gatsby,Retire,Tools,false,..excerpt also used in technology radar...
+Git,Adopt,Tools,false,..excerpt also used in technology radar...
+Google Analytics,Adopt,Platforms,false,..excerpt also used in technology radar...
+GraphQL,Explore,Languages and Frameworks,false,"GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools."
+Google Tag Manager,Adopt,Platforms,false,..excerpt also used in technology radar...
+HTTP2,Adopt,Techniques,false,Loading multiple small bundles at high speed
+HTML5 and CSS3,Adopt,Languages and Frameworks,false,The core of everything.
+Internationalization,Adopt,Techniques,false,FormatJS (react-intl)
+InVision for developers,Endure,Tools,false,"InVision is a prototyping tool created for designers, by designers. It allows you to quickly and easily create interactive mockups for your designs."
+Ionic framework,Explore,Languages and Frameworks,false,"Mobile app framework where developer can choose between React, Angular and Vue.js implementations"
+JAMStack,Adopt,Techniques,false,"new standard for web architecture, CDN, Microservices"
+JavaScript 5,Endure,Languages and Frameworks,false,"JavaScript 5 is the &quot;old&quot; version of JavaScript as currently supported by browsers (mostly JavaScript 5).
+See <a href=""https://en.wikipedia.org/wiki/JavaScript"">https://en.wikipedia.org/wiki/JavaScript</a>. Good to be used directly on small projects where build tools and transpiling are overhead. We prefer the use of ES2015 and beyond and use Babel for transpiling so more modern an powerful JavaScript language features can be used."
+Image optimization as a service,Adopt,Techniques,false,"Use image services like Kraken, ContentHub"
+Gulp,Endure,Tools,false,..excerpt also used in technology radar...
+Jest,Adopt,Languages and Frameworks,false,Testing library to describe your test.
+jQuery,Retire,Languages and Frameworks,false,"don&apos;t start another project with jQuery, except when innevitable on for example commerce projects or projects with out-of-the-box components."
+Lint Tools,Adopt,Tools,false,"ESLint, stylelint"
+LESS,Retire,Languages and Frameworks,false,Favor SASS over LESS.
+Material UI,Adopt,Languages and Frameworks,false,React UI framework (MUI) with standard set of components.
+Mirage JS,Adopt,Languages and Frameworks,false,"API mocking library, no need of backend services, mock data within components."
+Next.js,Adopt,Languages and Frameworks,false,"Next.js gives you the best developer experience with all the features you need for production: hybrid static &amp; server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed."
+Node.js,Adopt,Languages and Frameworks,false,Used in Azure Functions and local prototypes and tooling
+npm,Adopt,Tools,false,..excerpt also used in technology radar...
+OAuth2,Adopt,Techniques,false,Mostly used under the hood
+OData,Endure,Languages and Frameworks,false,..excerpt also used in technology radar...
+TYPO3,Endure,Platforms,false,PHP is a general-purpose scripting language that is especially suited to web development.
+PostCSS,Adopt,Tools,false,..excerpt also used in technology radar...
+Production First and CICD,Adopt,Techniques,false,Azure DevOps - pipelines
+PWA,Adopt,Techniques,false,Progressive Web Apps
+React forms,Adopt,Languages and Frameworks,false,"Form builder/handling, big JSON schema&apos;s use react-json-schema-form, else use react-hook-form"
+React-query,Adopt,Languages and Frameworks,false,"server state library, Powerful and performant data synchronization between server and client"
+React-router,Adopt,Languages and Frameworks,false,"Collection of navigational components, Routing"
+React,Adopt,Languages and Frameworks,false,Our choice as view library for building websites and web applications.
+Redux,Adopt,Languages and Frameworks,false,"State management for ReactJS, use redux-toolkit. Not for server state (see eg. react-query)."
+Remix,Explore,Languages and Frameworks,false,"Remix is a full stack web framework that lets you focus on the user interface and work back through web fundamentals to deliver a fast, slick, and resilient user experience."
+RX-JS,Explore,Languages and Frameworks,false,Reactive programming with JavaScript
+SASS,Adopt,Languages and Frameworks,false,"SASS stands for Syntactically Awesome Style Sheets. SASS is a <a href=""./CSS.md"">CSS</a> extension language, and is completely compatible with all versions of CSS.
+describes how HTML elements are to be displayed on screen, paper, or in other media."
+SEO,Adopt,Techniques,false,"Technical SEO - Schema.org, JSON-LD, OpenGraph, ..."
+Serverless,Adopt,Techniques,false,"Serverless computing: Azure Functions, Netlify Functions"
+Service workers,Adopt,Techniques,false,"event-driven scripts that run independently of web pages (fe. push notifications), programmable network proxy."
+Sitecore Experience Edge,Explore,Platforms,false,"Headless content delivery, available with Content Hub or XM"
+Sitecore JSS,Adopt,Platforms,false,To use Sitecore as a headless platform. Use in combination with NextJS
+Sitecore SXA,Endure,Platforms,false,Prefered platform for out of the box Sitecore implementations
+Sketch for developers,Endure,Tools,false,"Sketch is the all-in-one platform for digital design &#x2014; with collaborative design tools, prototyping and developer handoff."
+Solr,Endure,Platforms,false,"Part of the Sitecore box, for custom search Adopt ElasticSearch"
+Sonarcloud,Adopt,Tools,false,Analyze repository on code quality &amp; security
+Storybook,Adopt,Tools,false,..excerpt also used in technology radar...
+SVG,Adopt,Languages and Frameworks,false,Scalable Vector Graphics - the solution for resolution independent graphics.
+TailwindCSS,Explore,Languages and Frameworks,false,"Utility-first CSS framework, small library"
+Terminal,Adopt,Tools,false,"Commandline tooling, CLI&apos;s"
+Tree Shaking,Adopt,Techniques,false,Minimal bundle size - webpack / rollup?
+Turborepo,Explore,Tools,false,Turborepo is a high-performance build system for JavaScript and TypeScript codebases.
+TYPO3,Endure,Platforms,false,TYPO3 CMS is an Open Source Enterprise Content Management System in the PHP eco-system.
+TypeScript,Adopt,Languages and Frameworks,false,"TypeScript is JavaScript with syntax for types. TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale."
+UI Testing,Explore,Techniques,false,Cypress
+Unit tests,Adopt,Techniques,false,"Jest, testing-library.com"
+Visual Studio Code,Adopt,Tools,false,And team configurations (editor config)
+Vite,Explore,Tools,false,"build tool, fast build time"
+VueJS,Retire,Languages and Frameworks,false,Progressive JavaScript Framework for building websites and web applications.
+Web Assembly,Explore,Techniques,false,Blazer for example
+Web Components,Adopt,Languages and Frameworks,false,"Already using it in projects, see StencilJS as framework. Great alternative way of working with components in SXA"
+Web workers,Explore,Techniques,false,"run scripts in background threads independently of user-interface scripts, they can perform I/O using XMLHttpRequest."
+Webpack,Adopt,Tools,false,"The coordinator behind transpilation, minification and obfuscation. Client-side bundles CRA2 where possible,  server-side bundles custom webpack configuration."
+Websockets,Explore,Techniques,false,two way interactive communication between user&apos;s browser and server (fe. SocketIO)
+XState,Explore,Languages and Frameworks,false,"JavaScript/TypeScript state machine, declarative description of application behavior"
+Yarn,Endure,Tools,false,"npm/yarn move in same pace - choose npm if possible, use yarn otherwise"
+Zeplin,Endure,Tools,false,..excerpt also used in technology radar...
+date-fns,Adopt,Languages and Frameworks,false,The library to use for I18n internationalization date/time formatting.
+Day.js,Adopt,Languages and Frameworks,false,The library to use as minimal replacement for Moments.js.
+Moment.js,Retire,Languages and Frameworks,false,The date/time formatting library of the past. Refactor this library out of your code-base when possible.
+Deno,Endure,Tools,false,DDEV is an open source tool that makes it dead simple to get local PHP development environments up and running within minutes by utilizing Docker containers.
+Redux,Adopt,Languages and Frameworks,false,"Much the same as React, Redux is likewise a library which is generally used for front-end. It is a fundamental tool for overseeing both data state and UI-state in JavaScript applications."
