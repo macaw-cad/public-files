@@ -1,17 +1,17 @@
 [
   {
-    "name": "A11Y and ARIA",
-    "ring": "Explore",
-    "quadrant": "Techniques",
-    "isNew": false,
-    "description": "Accessibility, Adobe React Aria"
-  },
-  {
     "name": "Ag-grid",
     "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "JavaScript grid"
+  },
+  {
+    "name": "A11Y and ARIA",
+    "ring": "Explore",
+    "quadrant": "Techniques",
+    "isNew": false,
+    "description": "Accessibility, Adobe React Aria"
   },
   {
     "name": "Angular",
@@ -35,18 +35,18 @@
     "description": "ASP.NET is an open source web framework, created by Microsoft, for building modern web apps and services that run on macOS, Linux, Windows, and Docker. It can be used to build web frontends using Razor."
   },
   {
-    "name": "Axure",
-    "ring": "Endure",
-    "quadrant": "Tools",
-    "isNew": false,
-    "description": "..excerpt also used in technology radar..."
-  },
-  {
     "name": "Azure static web apps",
     "ring": "Explore",
     "quadrant": "Techniques",
     "isNew": false,
     "description": "Automatically build and deploy full stack web apps to Azure; Azure Functions"
+  },
+  {
+    "name": "Axure",
+    "ring": "Endure",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "..excerpt also used in technology radar..."
   },
   {
     "name": "Azure",
@@ -70,13 +70,6 @@
     "description": "..excerpt also used in technology radar..."
   },
   {
-    "name": "Content as a service",
-    "ring": "Adopt",
-    "quadrant": "Techniques",
-    "isNew": false,
-    "description": "JSS, Netlify-cms, BLS..."
-  },
-  {
     "name": "Code splitting",
     "ring": "Adopt",
     "quadrant": "Techniques",
@@ -89,6 +82,13 @@
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "C# is a general-purpose, multi-paradigm programming language. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines."
+  },
+  {
+    "name": "Content as a service",
+    "ring": "Adopt",
+    "quadrant": "Techniques",
+    "isNew": false,
+    "description": "JSS, Netlify-cms, BLS..."
   },
   {
     "name": "CSS",
@@ -126,11 +126,11 @@
     "description": "For unit of deployment, linux, Azure Web Apps / kubernetes"
   },
   {
-    "name": "ElasticSearch",
+    "name": "DOTNET Core 6",
     "ring": "Adopt",
     "quadrant": "Platforms",
     "isNew": false,
-    "description": "Dutch company, local support, based on usage look at Azure Search"
+    "description": "..excerpt also used in technology radar..."
   },
   {
     "name": "Esbuild",
@@ -140,6 +140,13 @@
     "description": "build tool, fast build time"
   },
   {
+    "name": "ElasticSearch",
+    "ring": "Adopt",
+    "quadrant": "Platforms",
+    "isNew": false,
+    "description": "Dutch company, local support, based on usage look at Azure Search"
+  },
+  {
     "name": "ESNext",
     "ring": "Endure",
     "quadrant": "Languages and Frameworks",
@@ -147,18 +154,18 @@
     "description": "The new version of JavaScript with way more powerful language constructs. "
   },
   {
-    "name": "Figma for developers",
-    "ring": "Adopt",
-    "quadrant": "Tools",
-    "isNew": false,
-    "description": "Figma is a web-based graphics editing and user interface design app."
-  },
-  {
     "name": "Fluent UI",
     "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "Fluent UI is a collection of UX frameworks for creating beautiful, cross-platform apps that share code, design, and interaction behavior. It is created by Microsoft and used in all Microsoft tooling like Teams, PowerApps, Office tools."
+  },
+  {
+    "name": "Figma for developers",
+    "ring": "Adopt",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "Figma is a web-based graphics editing and user interface design app."
   },
   {
     "name": "Formik",
@@ -175,13 +182,6 @@
     "description": "Don&apos;t be scared of install complete platform and edit Razor views"
   },
   {
-    "name": "Gatsby",
-    "ring": "Retire",
-    "quadrant": "Tools",
-    "isNew": false,
-    "description": "..excerpt also used in technology radar..."
-  },
-  {
     "name": "Git",
     "ring": "Adopt",
     "quadrant": "Tools",
@@ -189,9 +189,9 @@
     "description": "..excerpt also used in technology radar..."
   },
   {
-    "name": "DOTNET Core 6",
-    "ring": "Adopt",
-    "quadrant": "Platforms",
+    "name": "Gatsby",
+    "ring": "Retire",
+    "quadrant": "Tools",
     "isNew": false,
     "description": "..excerpt also used in technology radar..."
   },
@@ -245,18 +245,18 @@
     "description": "Use image services like Kraken, ContentHub"
   },
   {
-    "name": "InVision for developers",
-    "ring": "Endure",
-    "quadrant": "Tools",
-    "isNew": false,
-    "description": "InVision is a prototyping tool created for designers, by designers. It allows you to quickly and easily create interactive mockups for your designs."
-  },
-  {
     "name": "Internationalization",
     "ring": "Adopt",
     "quadrant": "Techniques",
     "isNew": false,
     "description": "FormatJS (react-intl)"
+  },
+  {
+    "name": "InVision for developers",
+    "ring": "Endure",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "InVision is a prototyping tool created for designers, by designers. It allows you to quickly and easily create interactive mockups for your designs."
   },
   {
     "name": "Ionic framework",
@@ -266,18 +266,18 @@
     "description": "Mobile app framework where developer can choose between React, Angular and Vue.js implementations"
   },
   {
+    "name": "JavaScript 5",
+    "ring": "Endure",
+    "quadrant": "Languages and Frameworks",
+    "isNew": false,
+    "description": "JavaScript 5 is the &quot;old&quot; version of JavaScript as currently supported by browsers (mostly JavaScript 5).\nSee <a href=\"https://en.wikipedia.org/wiki/JavaScript\">https://en.wikipedia.org/wiki/JavaScript</a>. Good to be used directly on small projects where build tools and transpiling are overhead. We prefer the use of ES2015 and beyond and use Babel for transpiling so more modern an powerful JavaScript language features can be used."
+  },
+  {
     "name": "JAMStack",
     "ring": "Adopt",
     "quadrant": "Techniques",
     "isNew": false,
     "description": "new standard for web architecture, CDN, Microservices"
-  },
-  {
-    "name": "jQuery",
-    "ring": "Retire",
-    "quadrant": "Languages and Frameworks",
-    "isNew": false,
-    "description": "don&apos;t start another project with jQuery, except when innevitable on for example commerce projects or projects with out-of-the-box components."
   },
   {
     "name": "Jest",
@@ -287,11 +287,11 @@
     "description": "Testing library to describe your test."
   },
   {
-    "name": "JavaScript 5",
-    "ring": "Endure",
+    "name": "jQuery",
+    "ring": "Retire",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "JavaScript 5 is the &quot;old&quot; version of JavaScript as currently supported by browsers (mostly JavaScript 5).\nSee <a href=\"https://en.wikipedia.org/wiki/JavaScript\">https://en.wikipedia.org/wiki/JavaScript</a>. Good to be used directly on small projects where build tools and transpiling are overhead. We prefer the use of ES2015 and beyond and use Babel for transpiling so more modern an powerful JavaScript language features can be used."
+    "description": "don&apos;t start another project with jQuery, except when innevitable on for example commerce projects or projects with out-of-the-box components."
   },
   {
     "name": "LESS",
@@ -322,13 +322,6 @@
     "description": "API mocking library, no need of backend services, mock data within components."
   },
   {
-    "name": "Next.js",
-    "ring": "Adopt",
-    "quadrant": "Languages and Frameworks",
-    "isNew": false,
-    "description": "Next.js gives you the best developer experience with all the features you need for production: hybrid static &amp; server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed."
-  },
-  {
     "name": "Node.js",
     "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
@@ -336,9 +329,23 @@
     "description": "Used in Azure Functions and local prototypes and tooling"
   },
   {
+    "name": "Next.js",
+    "ring": "Adopt",
+    "quadrant": "Languages and Frameworks",
+    "isNew": false,
+    "description": "Next.js gives you the best developer experience with all the features you need for production: hybrid static &amp; server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed."
+  },
+  {
     "name": "npm",
     "ring": "Adopt",
     "quadrant": "Tools",
+    "isNew": false,
+    "description": "..excerpt also used in technology radar..."
+  },
+  {
+    "name": "OData",
+    "ring": "Endure",
+    "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "..excerpt also used in technology radar..."
   },
@@ -350,18 +357,18 @@
     "description": "Mostly used under the hood"
   },
   {
-    "name": "OData",
-    "ring": "Endure",
-    "quadrant": "Languages and Frameworks",
-    "isNew": false,
-    "description": "..excerpt also used in technology radar..."
-  },
-  {
     "name": "PHP",
     "ring": "Endure",
     "quadrant": "Platforms",
     "isNew": false,
     "description": "PHP is a popular general-purpose scripting language that is especially suited to web development."
+  },
+  {
+    "name": "Production First and CICD",
+    "ring": "Adopt",
+    "quadrant": "Techniques",
+    "isNew": false,
+    "description": "Azure DevOps - pipelines"
   },
   {
     "name": "PostCSS",
@@ -371,11 +378,11 @@
     "description": "..excerpt also used in technology radar..."
   },
   {
-    "name": "Production First and CICD",
+    "name": "React-Query",
     "ring": "Adopt",
-    "quadrant": "Techniques",
+    "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "Azure DevOps - pipelines"
+    "description": "server state library, Powerful and performant data synchronization between server and client"
   },
   {
     "name": "PWA",
@@ -392,11 +399,11 @@
     "description": "Form builder/handling, big JSON schema&apos;s use react-json-schema-form, else use react-hook-form"
   },
   {
-    "name": "React-query",
+    "name": "React-router",
     "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "server state library, Powerful and performant data synchronization between server and client"
+    "description": "Collection of navigational components, Routing"
   },
   {
     "name": "React",
@@ -404,13 +411,6 @@
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "Our choice as view library for building websites and web applications."
-  },
-  {
-    "name": "React-router",
-    "ring": "Adopt",
-    "quadrant": "Languages and Frameworks",
-    "isNew": false,
-    "description": "Collection of navigational components, Routing"
   },
   {
     "name": "Redux",
@@ -427,13 +427,6 @@
     "description": "Remix is a full stack web framework that lets you focus on the user interface and work back through web fundamentals to deliver a fast, slick, and resilient user experience."
   },
   {
-    "name": "RX-JS",
-    "ring": "Explore",
-    "quadrant": "Languages and Frameworks",
-    "isNew": false,
-    "description": "Reactive programming with JavaScript"
-  },
-  {
     "name": "SASS",
     "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
@@ -441,11 +434,11 @@
     "description": "SASS stands for Syntactically Awesome Style Sheets. SASS is a <a href=\"./CSS.md\">CSS</a> extension language, and is completely compatible with all versions of CSS.\ndescribes how HTML elements are to be displayed on screen, paper, or in other media."
   },
   {
-    "name": "Serverless",
-    "ring": "Adopt",
-    "quadrant": "Techniques",
+    "name": "RX-JS",
+    "ring": "Explore",
+    "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "Serverless computing: Azure Functions, Netlify Functions"
+    "description": "Reactive programming with JavaScript"
   },
   {
     "name": "SEO",
@@ -453,6 +446,13 @@
     "quadrant": "Techniques",
     "isNew": false,
     "description": "Technical SEO - Schema.org, JSON-LD, OpenGraph, ..."
+  },
+  {
+    "name": "Serverless",
+    "ring": "Adopt",
+    "quadrant": "Techniques",
+    "isNew": false,
+    "description": "Serverless computing: Azure Functions, Netlify Functions"
   },
   {
     "name": "Service workers",
@@ -483,18 +483,18 @@
     "description": "Prefered platform for out of the box Sitecore implementations"
   },
   {
-    "name": "Sketch for developers",
-    "ring": "Endure",
-    "quadrant": "Tools",
-    "isNew": false,
-    "description": "Sketch is the all-in-one platform for digital design &#x2014; with collaborative design tools, prototyping and developer handoff."
-  },
-  {
     "name": "Solr",
     "ring": "Endure",
     "quadrant": "Platforms",
     "isNew": false,
     "description": "Part of the Sitecore box, for custom search Adopt ElasticSearch"
+  },
+  {
+    "name": "Sketch for developers",
+    "ring": "Endure",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "Sketch is the all-in-one platform for digital design &#x2014; with collaborative design tools, prototyping and developer handoff."
   },
   {
     "name": "Sonarcloud",
@@ -504,13 +504,6 @@
     "description": "Analyze repository on code quality &amp; security"
   },
   {
-    "name": "Storybook",
-    "ring": "Adopt",
-    "quadrant": "Tools",
-    "isNew": false,
-    "description": "..excerpt also used in technology radar..."
-  },
-  {
     "name": "SVG",
     "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
@@ -518,11 +511,25 @@
     "description": "Scalable Vector Graphics - the solution for resolution independent graphics."
   },
   {
+    "name": "Storybook",
+    "ring": "Adopt",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "..excerpt also used in technology radar..."
+  },
+  {
     "name": "TailwindCSS",
     "ring": "Explore",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "Utility-first CSS framework, small library"
+  },
+  {
+    "name": "Tree Shaking",
+    "ring": "Adopt",
+    "quadrant": "Techniques",
+    "isNew": false,
+    "description": "Minimal bundle size - webpack / rollup?"
   },
   {
     "name": "Terminal",
@@ -539,13 +546,6 @@
     "description": "Turborepo is a high-performance build system for JavaScript and TypeScript codebases."
   },
   {
-    "name": "Tree Shaking",
-    "ring": "Adopt",
-    "quadrant": "Techniques",
-    "isNew": false,
-    "description": "Minimal bundle size - webpack / rollup?"
-  },
-  {
     "name": "TypeScript",
     "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
@@ -560,18 +560,18 @@
     "description": "TYPO3 CMS is an Open Source Enterprise Content Management System\nin the PHP eco-system."
   },
   {
-    "name": "UI Testing",
-    "ring": "Explore",
-    "quadrant": "Techniques",
-    "isNew": false,
-    "description": "Cypress"
-  },
-  {
     "name": "Unit tests",
     "ring": "Adopt",
     "quadrant": "Techniques",
     "isNew": false,
     "description": "Jest, testing-library.com"
+  },
+  {
+    "name": "UI Testing",
+    "ring": "Explore",
+    "quadrant": "Techniques",
+    "isNew": false,
+    "description": "Cypress"
   },
   {
     "name": "Visual Studio Code",
@@ -588,6 +588,13 @@
     "description": "build tool, fast build time"
   },
   {
+    "name": "Web Assembly",
+    "ring": "Explore",
+    "quadrant": "Techniques",
+    "isNew": false,
+    "description": "Blazer for example"
+  },
+  {
     "name": "VueJS",
     "ring": "Retire",
     "quadrant": "Languages and Frameworks",
@@ -595,11 +602,11 @@
     "description": "Progressive JavaScript Framework for building websites and web applications."
   },
   {
-    "name": "Web Assembly",
-    "ring": "Explore",
-    "quadrant": "Techniques",
+    "name": "Web Components",
+    "ring": "Adopt",
+    "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "Blazer for example"
+    "description": "Already using it in projects, see StencilJS as framework. Great alternative way of working with components in SXA"
   },
   {
     "name": "Webpack",
@@ -614,13 +621,6 @@
     "quadrant": "Techniques",
     "isNew": false,
     "description": "run scripts in background threads independently of user-interface scripts, they can perform I/O using XMLHttpRequest."
-  },
-  {
-    "name": "Web Components",
-    "ring": "Adopt",
-    "quadrant": "Languages and Frameworks",
-    "isNew": false,
-    "description": "Already using it in projects, see StencilJS as framework. Great alternative way of working with components in SXA"
   },
   {
     "name": "Websockets",
@@ -651,13 +651,6 @@
     "description": "..excerpt also used in technology radar..."
   },
   {
-    "name": "Deno",
-    "ring": "Endure",
-    "quadrant": "Tools",
-    "isNew": false,
-    "description": "DDEV is an open source tool that makes it dead simple to get local PHP development environments up and running within minutes by utilizing Docker containers."
-  },
-  {
     "name": "date-fns",
     "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
@@ -677,6 +670,13 @@
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "The date/time formatting library of the past. Refactor this library out of your code-base when possible."
+  },
+  {
+    "name": "Deno",
+    "ring": "Endure",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "DDEV is an open source tool that makes it dead simple to get local PHP development environments up and running within minutes by utilizing Docker containers."
   },
   {
     "name": "Redux",
