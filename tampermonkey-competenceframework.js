@@ -2,9 +2,10 @@
 // @name        competenceframework-devops-wiki-validate-tampermonkey
 // @namespace   https://macaw.nl/
 // @version     1.0.3
-// @author
+// @author      Macaw Custom Application Development
 // @source      https://github.com/Trim21/webpack-userscript-template
 // @match       https://dev.azure.com/MacawCompetenceTeams/*
+// @grant       GM_log
 // @run-at      document-end
 // ==/UserScript==
 
@@ -44192,7 +44193,7 @@ module.exports = isNumber;
 
 exports.__esModule = true;
 exports.competenceTeamFunctionLevelConstraints = exports.competenceTeamRoleConstraints = exports.quadrantValuesConstraints = exports.ringValuesConstraints = exports.skillTypeValuesConstraints = void 0;
-exports.skillTypeValuesConstraints = ["Soft", "Hard", "Competency"];
+exports.skillTypeValuesConstraints = ["Soft", "Hard", "Collaboration"];
 exports.ringValuesConstraints = ["Adopt", "Explore", "Endure", "Retire"];
 exports.quadrantValuesConstraints = ["Languages and Frameworks", "Tools", "Platforms", "Techniques"]; // Configuration of roles available per competence team
 
@@ -44309,12 +44310,18 @@ exports.filterTopics = filterTopics;
 
 var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
   if (k2 === undefined) k2 = k;
-  Object.defineProperty(o, k2, {
-    enumerable: true,
-    get: function () {
-      return m[k];
-    }
-  });
+  var desc = Object.getOwnPropertyDescriptor(m, k);
+
+  if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+    desc = {
+      enumerable: true,
+      get: function () {
+        return m[k];
+      }
+    };
+  }
+
+  Object.defineProperty(o, k2, desc);
 } : function (o, m, k, k2) {
   if (k2 === undefined) k2 = k;
   o[k2] = m[k];
@@ -44516,7 +44523,8 @@ var competenceFrameworkSettingsGetJSONSchema = function () {
         }
       }
     },
-    required: ["skillType", "skillLevel", "ring", "quadrant", "fork"]
+    required: ["skillType", "skillLevel", "ring", "quadrant", "fork"],
+    additionalProperties: false
   };
 };
 
@@ -44562,6 +44570,7 @@ var competenceTeamPagesGetJSONSchema = function () {
       type: "object",
       properties: {},
       required: [],
+      additionalProperties: false
   };
   */
 };
@@ -44608,6 +44617,7 @@ var competenceTeamRolePagesGetJSONSchema = function () {
       type: "object",
       properties: {},
       required: [],
+      additionalProperties: false
   };
   */
 };
@@ -44617,18 +44627,21 @@ exports.competenceTeamRolePagesGetJSONSchema = competenceTeamRolePagesGetJSONSch
 /***/ }),
 
 /***/ "../shared/dist/schema/competenceTeamSettings.js":
-/***/ ((__unused_webpack_module, exports) => {
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 
 exports.__esModule = true;
 exports.competenceTeamSettingsGetJSONSchema = exports.competenceTeamSettingsGetSchemaInfo = void 0;
+
+var competenceFrameworkSettings_1 = __webpack_require__("../shared/dist/schema/competenceFrameworkSettings.js");
 /**
  * Returns the schema information for competence team settings
  *
  * @returns schema information
  */
+
 
 var competenceTeamSettingsGetSchemaInfo = function () {
   return {
@@ -44639,30 +44652,28 @@ var competenceTeamSettingsGetSchemaInfo = function () {
 
 exports.competenceTeamSettingsGetSchemaInfo = competenceTeamSettingsGetSchemaInfo;
 /**
- * Returns the JSON Schema information for competence team settings
+ * Returns the JSON Schema information for competence team settings, which is an extension of the competence framework settings.
  *
  * @returns schema information
  */
 
 var competenceTeamSettingsGetJSONSchema = function () {
-  return {
-    type: "object",
-    properties: {
-      role: {
-        type: "array",
-        items: {
-          type: "string"
-        }
-      },
-      functionLevel: {
-        type: "array",
-        items: {
-          type: "string"
-        }
-      }
-    },
-    required: ["role", "functionLevel"]
+  var schema = (0, competenceFrameworkSettings_1.competenceFrameworkSettingsGetJSONSchema)();
+  schema.properties.role = {
+    type: "array",
+    items: {
+      type: "string"
+    }
   };
+  schema.properties.functionLevel = {
+    type: "array",
+    items: {
+      type: "string"
+    }
+  };
+  schema.required = ["role", "functionLevel"]; // competenceFrameworkSettings can optionally be overridden by competenceTeamSettings
+
+  return schema;
 };
 
 exports.competenceTeamSettingsGetJSONSchema = competenceTeamSettingsGetJSONSchema;
@@ -44692,11 +44703,11 @@ var generalPage_1 = __webpack_require__("../shared/dist/schema/generalPage.js");
 
 var topic_1 = __webpack_require__("../shared/dist/schema/topic.js");
 /**
- * Returj the schema information for the given SubjectInfo
+ * Return the schema information for the given SubjectInfo
  *
  * @param subjectInfo   subjectInfo based on current Wiki page
  * @param settings      general settings
- * @param ctSettings    comtetence team specific settings
+ * @param ctSettings    competence team specific settings (can be empty object if not in competence team page)
  * @returns schema information
  */
 
@@ -44705,7 +44716,7 @@ var getSchemaInfo = function (subjectInfo, settings, ctSettings) {
   // create skill level schema
   var skillLevelForFunctionLevel = {};
 
-  if (ctSettings.functionLevel) {
+  if (ctSettings && ctSettings.functionLevel) {
     ctSettings.functionLevel.forEach(function (functionLevel) {
       skillLevelForFunctionLevel[functionLevel] = {
         type: "string",
@@ -44787,6 +44798,7 @@ var generalPageGetJSONSchema = function () {
         "default": false
       }
     },
+    additionalProperties: false,
     required: []
   };
 };
@@ -44816,7 +44828,10 @@ var topicGetSchemaInfo = function (settings, ctSettings, skillLevelForFunctionLe
   return {
     jsonSchema: (0, exports.topicGetJSONSchema)(settings, ctSettings, skillLevelForFunctionLevel),
     uiSchema: {
-      "ui:order": ["name", "uid", "internal", "skillType", "isCCSkill", "isLearningPath", "roles", "showOnRadar", "ring", "quadrant", "isNew"]
+      "ui:order": ["name", "uid", "internal", "skillType", "isCCSkill", "isLearningPath", "roles", "showOnRadar", "ring", "quadrant", "isNew"],
+      uid: {
+        "ui:readonly": true
+      }
     }
   };
 };
@@ -44888,9 +44903,6 @@ var topicGetJSONSchema = function (settings, ctSettings, skillLevelForFunctionLe
         type: "boolean",
         title: "Show this topic on the technology radar",
         "default": false
-      },
-      isNew: {
-        type: "boolean"
       }
     },
     required: ["name", "uid", "skillType"],
@@ -44916,6 +44928,11 @@ var topicGetJSONSchema = function (settings, ctSettings, skillLevelForFunctionLe
               type: "string",
               title: "On which quadrant on the technology radar?",
               "enum": settings.quadrant
+            },
+            isNew: {
+              type: "boolean",
+              title: "This is a new topic on the technology radar",
+              "default": false
             }
           }
         }]
@@ -45406,7 +45423,7 @@ exports.convertCompetenceFrameworkValidationErrorToErrorString = void 0;
 
 var createWarningOrErrorString_1 = __webpack_require__("../shared/dist/validate/createWarningOrErrorString.js");
 
-function convertCompetenceFrameworkValidationErrorToErrorString(error) {
+function convertCompetenceFrameworkValidationErrorToErrorString(basepath, error) {
   switch (error.errorType) {
     case "JSONError":
       {
@@ -45416,13 +45433,12 @@ function convertCompetenceFrameworkValidationErrorToErrorString(error) {
 
     case "YAMLError":
       {
-        var yamlError = error;
-        console.log("YAMLError", yamlError);
+        var yamlError = error; // console.log("YAMLError", yamlError);
 
         if (yamlError.mark) {
-          return (0, createWarningOrErrorString_1.createErrorString)("".concat(yamlError.message), "YAMLError", yamlError.mark.name, yamlError.mark.line, yamlError.mark.column);
+          return (0, createWarningOrErrorString_1.createErrorString)(basepath, "".concat(yamlError.message), "YAMLError", yamlError.mark.name, yamlError.mark.line, yamlError.mark.column);
         } else {
-          return (0, createWarningOrErrorString_1.createErrorString)("".concat(yamlError.message), "YAMLError");
+          return (0, createWarningOrErrorString_1.createErrorString)(basepath, "".concat(yamlError.message), "YAMLError");
         } // return createErrorString(`${yamlError.message}\n${yamlError.mark.snippet}`, "YAMLError", yamlError.mark.name, yamlError.mark.line, yamlError.mark.column);
 
       }
@@ -45430,17 +45446,17 @@ function convertCompetenceFrameworkValidationErrorToErrorString(error) {
     case "SchemaValidationError":
       {
         var validationError = error;
-        return (0, createWarningOrErrorString_1.createErrorString)(validationError.message, "SchemaValidationError", validationError.filepath);
+        return (0, createWarningOrErrorString_1.createErrorString)(basepath, "".concat(validationError.path).concat(validationError.path ? " " : "").concat(validationError.message), "SchemaValidationError", validationError.filepath);
       }
 
     case "MissingFileError":
       {
         var missingFileError = error;
-        return (0, createWarningOrErrorString_1.createErrorString)(missingFileError.message, "MissingFileError", missingFileError.filepath);
+        return (0, createWarningOrErrorString_1.createErrorString)(basepath, missingFileError.message, "MissingFileError", missingFileError.filepath);
       }
 
     default:
-      return (0, createWarningOrErrorString_1.createErrorString)(error.message, "UnknownError");
+      return (0, createWarningOrErrorString_1.createErrorString)(basepath, error.message, "UnknownError");
   }
 }
 
@@ -45461,7 +45477,7 @@ var errorColumnAddCount = 0;
 var warningLastFilepath;
 var warningColumnAddCount = 0;
 
-function createErrorString(message, errorType, filepath, line, column) {
+function createErrorString(basepath, message, errorType, filepath, line, column) {
   if (filepath === void 0) {
     filepath = "";
   }
@@ -45484,7 +45500,7 @@ function createErrorString(message, errorType, filepath, line, column) {
   }
 
   errorLastFilepath = filepath;
-  var filepathString = filepath === "" ? "<nofile>" : filepath; // const errorMessage = `${chalk.bgRed("ERROR")}: ${filepathString}(${line},${column}): ${errorType} - ${message}`;
+  var filepathString = filepath === "" ? "<nofile>" : basepath + "/" + filepath; // const errorMessage = `${chalk.bgRed("ERROR")}: ${filepathString}(${line},${column}): ${errorType} - ${message}`;
 
   var errorMessage = "ERROR: ".concat(filepathString, "(").concat(line, ",").concat(column, "): ").concat(errorType, " - ").concat(message);
   return errorMessage;
@@ -45492,7 +45508,7 @@ function createErrorString(message, errorType, filepath, line, column) {
 
 exports.createErrorString = createErrorString;
 
-function createWarningString(message, errorType, filepath, line, column) {
+function createWarningString(basepath, message, errorType, filepath, line, column) {
   if (filepath === void 0) {
     filepath = "";
   }
@@ -45515,7 +45531,7 @@ function createWarningString(message, errorType, filepath, line, column) {
   }
 
   warningLastFilepath = filepath;
-  var filepathString = filepath === "" ? "<nofile>" : filepath; // const warningMessage = `${chalk.bgYellow("WARNING")}: ${filepathString}(${line},${column}): ${errorType} - ${message}`;
+  var filepathString = filepath === "" ? "<nofile>" : basepath + "/" + filepath; // const warningMessage = `${chalk.bgYellow("WARNING")}: ${filepathString}(${line},${column}): ${errorType} - ${message}`;
 
   var warningMessage = "WARNING: ".concat(filepathString, "(").concat(line, ",").concat(column, "): ").concat(errorType, " - ").concat(message);
   return warningMessage;
@@ -45771,10 +45787,9 @@ var factory_1 = __webpack_require__("../shared/dist/schema/factory.js");
 var markdownPathToSubject_1 = __webpack_require__("../shared/dist/util/markdownPathToSubject.js");
 
 function markdownPathToSchema(path, getCompetenceFrameworkSettings, getCompetenceTeamSettings) {
-  var _a;
-
   return __awaiter(this, void 0, void 0, function () {
-    var subjectInfo, settings, ctSettings;
+    var subjectInfo, settings, ctSettings, _a;
+
     return __generator(this, function (_b) {
       switch (_b.label) {
         case 0:
@@ -45792,12 +45807,25 @@ function markdownPathToSchema(path, getCompetenceFrameworkSettings, getCompetenc
 
         case 1:
           settings = _b.sent();
+          if (!subjectInfo.competenceteam) return [3
+          /*break*/
+          , 3];
           return [4
           /*yield*/
-          , getCompetenceTeamSettings((_a = subjectInfo.competenceteam) !== null && _a !== void 0 ? _a : "")];
+          , getCompetenceTeamSettings(subjectInfo.competenceteam)];
 
         case 2:
-          ctSettings = _b.sent();
+          _a = _b.sent();
+          return [3
+          /*break*/
+          , 4];
+
+        case 3:
+          _a = {};
+          _b.label = 4;
+
+        case 4:
+          ctSettings = _a;
           return [2
           /*return*/
           , (0, factory_1.getSchemaInfo)(subjectInfo, settings, ctSettings)];
@@ -45883,22 +45911,26 @@ function validateObjectAgainstSchema(filepath, obj, jsonSchema) {
 
   if (!validate(obj) && validate.errors) {
     var schemaValidationResult = validate.errors.map(function (err) {
-      var errMessage = "";
-
-      if (err.instancePath != "") {
-        errMessage += err.instancePath.split("/").pop() + " ";
-      }
+      var errMessage = ""; // console.log(`============== AJV ErrorObject: ${filepath} : `, JSON.stringify(err, null, 2));
+      // TODO: SvdO: instancePath not part of type
+      // if (err.instancePath) {
+      //     errMessage += err.instancePath.split("/").pop() + " ";
+      // }
 
       errMessage += err.message;
 
-      if (err.keyword == "enum") {
-        errMessage += ":\n    " + err.params.allowedValues.join("\n    ");
+      if (err.keyword === "enum") {
+        errMessage += ": " + err.params.allowedValues.join(",");
+      }
+
+      if (err.keyword === "additionalProperties") {
+        errMessage += ": " + err.params.additionalProperty;
       }
 
       return {
         errorType: "SchemaValidationError",
         filepath: filepath,
-        path: err.keyword,
+        path: err.instancePath,
         message: errMessage
       };
     });
@@ -46079,6 +46111,27 @@ var front_matter_1 = __importDefault(__webpack_require__("../shared/node_modules
 var markdownPathToSchema_1 = __webpack_require__("../shared/dist/validate/markdownPathToSchema.js");
 
 var validateObject_1 = __webpack_require__("../shared/dist/validate/validateObject.js");
+/**
+ * Validate the frontmatter of a Markdown page.
+ *
+ * @param filepath Path to the Markdown file (for error reporting)
+ * @param markdown The Markdown string to validate
+ * @returns null if valid, otherwise CompetenceFrameworkValidationError[] with single element of type YAMLError with details on error
+ *
+ * YAMLError contains the following fields:
+ * - errorType: "YAMLError"
+ * - name: The name of the error (YAMLException)
+ * - reason: The reason for the error
+ * - message: The message of the error
+ * - mark: The position of the error in the YAML file
+ * - mark.name: the injected filepath specified
+ * - mark.buffer: the YAML string
+ * - mark.position: the position of the error in the YAML string
+ * - mark.line: the line number of the error in the YAML string
+ * - mark.column: the column number of the error in the YAML string
+ * - mark.snippet: the snippet of the YAML string where the error occurred, including newlines for display
+ */
+
 
 function validatePageFrontmatter(filepath, markdown, getCompetenceFrameworkSettings, getCompetenceTeamSettings) {
   return __awaiter(this, void 0, void 0, function () {
@@ -46138,12 +46191,18 @@ exports.validatePageFrontmatter = validatePageFrontmatter;
 
 var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
   if (k2 === undefined) k2 = k;
-  Object.defineProperty(o, k2, {
-    enumerable: true,
-    get: function () {
-      return m[k];
-    }
-  });
+  var desc = Object.getOwnPropertyDescriptor(m, k);
+
+  if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+    desc = {
+      enumerable: true,
+      get: function () {
+        return m[k];
+      }
+    };
+  }
+
+  Object.defineProperty(o, k2, desc);
 } : function (o, m, k, k2) {
   if (k2 === undefined) k2 = k;
   o[k2] = m[k];
@@ -46181,7 +46240,8 @@ var validateObject_1 = __webpack_require__("../shared/dist/validate/validateObje
  * @param str YAML string to validate
  * @returns null if valid, otherwise YAMLException with details on error
  *
- * YAMLException contains the following fields:
+ * YAMLError contains the following fields:
+ * - errorType: "YAMLError"
  * - name: The name of the error (YAMLException)
  * - reason: The reason for the error
  * - message: The message of the error
@@ -46197,14 +46257,15 @@ var validateObject_1 = __webpack_require__("../shared/dist/validate/validateObje
 
 function validateYaml(filepath, str) {
   try {
-    var data = yaml.load(str);
-    console.log(JSON.stringify(data, null, 2));
+    /* const data = */
+    yaml.load(str); // console.log(JSON.stringify(data, null, 2));
+
     return null;
   } catch (e) {
     var err = e;
     err.errorType = "YAMLError";
-    err.mark.name = filepath;
-    console.log(err.stack || String(err));
+    err.mark.name = filepath; // console.log(err.stack || String(err));
+
     return err;
   }
 }
@@ -72151,7 +72212,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "form.rjsf {\n  /*!\n * Generated using
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".metadata-editor-container {\n  padding: 20px;\n}\nform.rjsf {\n  width: 100%;\n  /*\n    .ui.checkbox label:after {\n        font-family: \"AzureDevOpsMDL2Assets\" !important;\n        content: \"\\E73E\" !important;\n    }\n    div.vertical.buttons button {\n        height: 40px !important;\n        i.icon {\n            font-size: 1.5em !important;\n            overflow: visible;\n        }\n    }\n    */\n}\nform.rjsf i.glyphicon {\n  font-family: \"AzureDevOpsMDL2Assets\";\n  font-style: normal;\n  line-height: 1.5;\n}\nform.rjsf i.glyphicon.glyphicon-arrow-up:before {\n  content: \"\\E74A\";\n}\nform.rjsf i.glyphicon.glyphicon-arrow-down:before {\n  content: \"\\E74B\";\n}\nform.rjsf i.glyphicon.glyphicon-remove:before {\n  content: \"\\E74D\";\n}\nform.rjsf i.glyphicon.glyphicon-plus:before {\n  content: \"\\E710\";\n}\nform.rjsf .field-array fieldset.field-array {\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  padding: 0 20px;\n  margin: 0;\n}\nform.rjsf .field-array legend {\n  border: 0;\n  width: auto;\n  padding: 10px;\n}\nform.rjsf .field-array .array-item {\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  background: #f0f0f0;\n  margin-bottom: 20px;\n  padding: 20px;\n}\nform.rjsf .field-array .btn-group {\n  justify-content: end !important;\n  padding: 0;\n  background: none;\n}\nform.rjsf .field-array .btn-group button {\n  flex: 0 !important;\n  margin-left: 10px;\n}\nform.rjsf .btn-group {\n  position: sticky;\n  bottom: 0;\n  background: var(--callout-background-color, #ffffff);\n  padding: 20px 0;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".metadata-editor-container {\n  padding: 20px;\n}\nform.rjsf {\n  width: 100%;\n  /*\n    .ui.checkbox label:after {\n        font-family: \"AzureDevOpsMDL2Assets\" !important;\n        content: \"\\E73E\" !important;\n    }\n    div.vertical.buttons button {\n        height: 40px !important;\n        i.icon {\n            font-size: 1.5em !important;\n            overflow: visible;\n        }\n    }\n    */\n}\nform.rjsf i.glyphicon {\n  font-family: \"AzureDevOpsMDL2Assets\";\n  font-style: normal;\n  line-height: 1.5;\n}\nform.rjsf i.glyphicon.glyphicon-arrow-up:before {\n  content: \"\\E74A\";\n}\nform.rjsf i.glyphicon.glyphicon-arrow-down:before {\n  content: \"\\E74B\";\n}\nform.rjsf i.glyphicon.glyphicon-remove:before {\n  content: \"\\E74D\";\n}\nform.rjsf i.glyphicon.glyphicon-plus:before {\n  content: \"\\E710\";\n}\nform.rjsf i.glyphicon.glyphicon-reload:before {\n  content: \"\\E72C\";\n}\nform.rjsf .field-array fieldset.field-array {\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  padding: 0 20px;\n  margin: 0;\n}\nform.rjsf .field-array legend {\n  border: 0;\n  width: auto;\n  padding: 10px;\n}\nform.rjsf .field-array .array-item {\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  background: #f0f0f0;\n  margin-bottom: 20px;\n  padding: 20px;\n}\nform.rjsf .field-array .btn-group {\n  justify-content: end !important;\n  padding: 0;\n  background: none;\n}\nform.rjsf .field-array .btn-group button {\n  flex: 0 !important;\n  margin-left: 10px;\n}\nform.rjsf .btn-group {\n  position: sticky;\n  bottom: 0;\n  background: var(--callout-background-color, #ffffff);\n  padding: 20px 0;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -95939,6 +96000,146 @@ var metadataEditor_update = injectStylesIntoStyleTag_default()(metadataEditor/* 
 
        /* harmony default export */ const suggest_metadataEditor = (metadataEditor/* default */.Z && metadataEditor/* default.locals */.Z.locals ? metadataEditor/* default.locals */.Z.locals : undefined);
 
+;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-browser/rng.js
+// Unique ID creation requires a high quality random # generator. In the browser we therefore
+// require the crypto API and do not support built-in fallback to lower quality random number
+// generators (like Math.random()).
+var getRandomValues;
+var rnds8 = new Uint8Array(16);
+function rng() {
+  // lazy load so that environments that need to polyfill have a chance to do so
+  if (!getRandomValues) {
+    // getRandomValues needs to be invoked in a context where "this" is a Crypto implementation. Also,
+    // find the complete implementation of crypto (msCrypto) on IE11.
+    getRandomValues = typeof crypto !== 'undefined' && crypto.getRandomValues && crypto.getRandomValues.bind(crypto) || typeof msCrypto !== 'undefined' && typeof msCrypto.getRandomValues === 'function' && msCrypto.getRandomValues.bind(msCrypto);
+
+    if (!getRandomValues) {
+      throw new Error('crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported');
+    }
+  }
+
+  return getRandomValues(rnds8);
+}
+;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-browser/regex.js
+/* harmony default export */ const regex = (/^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i);
+;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-browser/validate.js
+
+
+function validate(uuid) {
+  return typeof uuid === 'string' && regex.test(uuid);
+}
+
+/* harmony default export */ const esm_browser_validate = (validate);
+;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-browser/stringify.js
+
+/**
+ * Convert array of 16 byte values to UUID string format of the form:
+ * XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+ */
+
+var byteToHex = [];
+
+for (var i = 0; i < 256; ++i) {
+  byteToHex.push((i + 0x100).toString(16).substr(1));
+}
+
+function stringify(arr) {
+  var offset = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0; // Note: Be careful editing this code!  It's been tuned for performance
+  // and works in ways you may not expect. See https://github.com/uuidjs/uuid/pull/434
+
+  var uuid = (byteToHex[arr[offset + 0]] + byteToHex[arr[offset + 1]] + byteToHex[arr[offset + 2]] + byteToHex[arr[offset + 3]] + '-' + byteToHex[arr[offset + 4]] + byteToHex[arr[offset + 5]] + '-' + byteToHex[arr[offset + 6]] + byteToHex[arr[offset + 7]] + '-' + byteToHex[arr[offset + 8]] + byteToHex[arr[offset + 9]] + '-' + byteToHex[arr[offset + 10]] + byteToHex[arr[offset + 11]] + byteToHex[arr[offset + 12]] + byteToHex[arr[offset + 13]] + byteToHex[arr[offset + 14]] + byteToHex[arr[offset + 15]]).toLowerCase(); // Consistency check for valid UUID.  If this throws, it's likely due to one
+  // of the following:
+  // - One or more input array values don't map to a hex octet (leading to
+  // "undefined" in the uuid)
+  // - Invalid input values for the RFC `version` or `variant` fields
+
+  if (!esm_browser_validate(uuid)) {
+    throw TypeError('Stringified UUID is invalid');
+  }
+
+  return uuid;
+}
+
+/* harmony default export */ const esm_browser_stringify = (stringify);
+;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-browser/v4.js
+
+
+
+function v4(options, buf, offset) {
+  options = options || {};
+  var rnds = options.random || (options.rng || rng)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (var i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return esm_browser_stringify(rnds);
+}
+
+/* harmony default export */ const esm_browser_v4 = (v4);
+;// CONCATENATED MODULE: ./src/suggest/GUIDField.tsx
+
+
+const GUIDField = props => {
+  const [uid, setUid] = (0,react.useState)(props.value); // callback when value changes in UI
+
+  const onChange = event => {
+    const value = event.target.value;
+    setUid(value);
+    props.onChange(value);
+  }; // create a fresh UID
+
+
+  const createGUID = () => {
+    // Form: CB376560-E752-4AFB-AAB5-CA8FFD180A98
+    const value = esm_browser_v4().toUpperCase();
+    setUid(value);
+    props.onChange(value);
+  }; // make sure we have a UID at start
+
+
+  if (uid === null || uid === "") {
+    createGUID();
+  }
+
+  return /*#__PURE__*/react.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react.createElement("div", {
+    style: {
+      display: "inline-block",
+      width: "calc(100% - 40px)"
+    }
+  }, /*#__PURE__*/react.createElement("input", {
+    className: "form-control",
+    id: props.id,
+    readOnly: true,
+    type: "text",
+    value: uid,
+    onChange: event => onChange(event)
+  })), /*#__PURE__*/react.createElement("div", {
+    style: {
+      display: "inline-block",
+      width: "40px",
+      textAlign: "end"
+    }
+  }, /*#__PURE__*/react.createElement("button", {
+    type: "button",
+    className: "btn",
+    "aria-label": "Create",
+    onClick: () => createGUID()
+  }, /*#__PURE__*/react.createElement("i", {
+    className: "glyphicon glyphicon-reload"
+  }))));
+};
 ;// CONCATENATED MODULE: ./src/suggest/metadataEditor.tsx
 
 
@@ -95949,11 +96150,13 @@ var metadataEditor_update = injectStylesIntoStyleTag_default()(metadataEditor/* 
 
  //import "semantic-ui-css/semantic.min.css";
 
+
 /**
  * Component that displays the metadata editor button and triggers the editor when clicked
  *
  * @returns MetadataEditorButton React component
  */
+
 const MetadataEditorButton = props => {
   const [metadataEditorId, setMetadataEditorId] = (0,react.useState)(0);
   const [isOpen, setIsOpen] = (0,react.useState)(false);
@@ -96023,9 +96226,15 @@ const MetadataEditor = props => {
 
   const handleSave = type => {
     const template = props.editorInfo.schemaInfo.uiSchema["ui:order"].reduce((acc, curr) => (acc[curr] = "", acc), {});
-    const data = (0,dist.obj2yaml)(Object.assign(template, type.formData));
-    const newyaml = "---\n" + data + "---\n" + props.context.content.body;
-    props.context.area.value = newyaml;
+    const dataObj = Object.assign(template, type.formData);
+    const newyaml = "---\n" + (0,dist.obj2yaml)(dataObj) + "---\n" + props.context.content.body;
+    props.context.area.value = newyaml; // trigger an input to re-validate
+
+    var event = new Event("input", {
+      bubbles: true,
+      cancelable: true
+    });
+    props.context.area.dispatchEvent(event);
     hidePanel();
   };
 
@@ -96036,6 +96245,10 @@ const MetadataEditor = props => {
     return /*#__PURE__*/react.createElement(react.Fragment, null);
   }
 
+  const jsonSchema = props.editorInfo.schemaInfo.jsonSchema;
+  const uiSchema = props.editorInfo.schemaInfo.uiSchema || {}; // exchange UID editor
+
+  uiSchema.uid["ui:widget"] = GUIDField;
   return isOpen && /*#__PURE__*/react.createElement(Panel_Panel_Panel, {
     modal: true,
     size: 4,
@@ -96045,8 +96258,8 @@ const MetadataEditor = props => {
     }
   }, /*#__PURE__*/react.createElement(es, {
     noHtml5Validate: true,
-    schema: props.editorInfo.schemaInfo.jsonSchema,
-    uiSchema: props.editorInfo.schemaInfo.uiSchema,
+    schema: jsonSchema,
+    uiSchema: uiSchema,
     formData: metadata,
     onSubmit: type => handleSave(type)
   }, /*#__PURE__*/react.createElement("div", {
@@ -96424,7 +96637,6 @@ const ValidatorUI = props => {
   const pillText = errors.length > 0 ? errors.length > 1 ? `${errors.length} errors` : `${errors.length} error` : "OK";
 
   const handleInput = async () => {
-    console.log("check");
     const text = props.info.textarea.value;
     const validationErrors = await (0,dist.validatePageFrontmatter)(props.info.markdownPath, text, props.getCompetenceFrameworkSettings, props.getCompetenceTeamSettings);
     setErrors(validationErrors); //ensureValidationErrorsDiv(validationErrors);
