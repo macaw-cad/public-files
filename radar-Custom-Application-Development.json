@@ -25,7 +25,7 @@
     "ring": "Endure",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "..excerpt also used in technology radar..."
+    "description": "Open Data Protocol (OData) is an open protocol that allows the creation and consumption of queryable and interoperable REST APIs in a simple and standard way. Microsoft initiated OData in 2007"
   },
   {
     "name": "Postman",
@@ -60,63 +60,63 @@
     "ring": "Adopt",
     "quadrant": "Platforms",
     "isNew": false,
-    "description": "..excerpt also used in technology radar..."
+    "description": "Azure Active Directory (Azure AD) is a cloud-based identity and access management service."
   },
   {
     "name": "Azure App Configuration",
     "ring": "Adopt",
     "quadrant": "Platforms",
     "isNew": false,
-    "description": "..excerpt also used in technology radar..."
+    "description": "Azure App Configuration provides a service to centrally manage application settings and feature flags."
   },
   {
     "name": "Azure App Service",
     "ring": "Adopt",
     "quadrant": "Platforms",
     "isNew": false,
-    "description": "..excerpt also used in technology radar..."
+    "description": "Azure Web Apps is a cloud computing based platform for hosting websites, created and operated by Microsoft. It is a platform as a service which allows publishing Web apps running on multiple frameworks and written in different programming languages."
   },
   {
     "name": "Azure Application Insights",
     "ring": "Adopt",
     "quadrant": "Platforms",
     "isNew": false,
-    "description": "..excerpt also used in technology radar..."
+    "description": "Application Insights can monitor Azure cloud service apps for availability, performance, failures, and usage by combining data from Application Insights SDKs with Azure Diagnostics data from your cloud services."
   },
   {
     "name": "Azure-CDN",
     "ring": "Adopt",
     "quadrant": "Platforms",
     "isNew": false,
-    "description": "..excerpt also used in technology radar..."
+    "description": "Azure Content Delivery Network (CDN) is CDN service provided by Azure Cloud Platform that enables in storing and accessing data on different content servers and locations &#x2013; used by online or cloud services."
   },
   {
     "name": "Azure Functions",
     "ring": "Adopt",
     "quadrant": "Platforms",
     "isNew": false,
-    "description": "..excerpt also used in technology radar..."
+    "description": "Azure Functions is a cloud service available on-demand that provides all the continually updated infrastructure and resources needed to run your applications. You focus on the pieces of code that matter most to you, and Functions handles the rest. Functions provides serverless compute for Azure."
   },
   {
     "name": "Azure Key Vault",
     "ring": "Adopt",
     "quadrant": "Platforms",
     "isNew": false,
-    "description": "..excerpt also used in technology radar..."
+    "description": "Azure Key Vault is a cloud service for securely storing and accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, or cryptographic keys."
   },
   {
     "name": "Azure Storage",
     "ring": "Adopt",
     "quadrant": "Platforms",
     "isNew": false,
-    "description": "..excerpt also used in technology radar..."
+    "description": "The Azure Storage platform is Microsoft&apos;s cloud storage solution for modern data storage scenarios. Azure Storage offers highly available, massively scalable, durable, and secure storage for a variety of data objects in the cloud."
   },
   {
     "name": "Azure Static Web Apps",
     "ring": "Explore",
     "quadrant": "Platforms",
     "isNew": false,
-    "description": "Automatically build and deploy full stack web apps to Azure; Azure Functions"
+    "description": "Azure Static Web Apps is a service that automatically builds and deploys full stack web apps to Azure from a code repository. The workflow of Azure Static Web Apps is tailored to a developer&apos;s daily workflow. Apps are built and deployed based off code changes."
   },
   {
     "name": "Build tooling",
@@ -130,7 +130,7 @@
     "ring": "Adopt",
     "quadrant": "Techniques",
     "isNew": false,
-    "description": "(fe. Dynamic imports)"
+    "description": "Code splitting is the splitting of code into various bundles or components which can then be loaded on demand or in parallel. As an application grows in complexity or is maintained, CSS and JavaScript files or bundles grow in byte size, especially as the number and size of included third-party libraries increases."
   },
   {
     "name": "Grunt",
@@ -151,7 +151,7 @@
     "ring": "Adopt",
     "quadrant": "Tools",
     "isNew": false,
-    "description": "A tool for managing JavaScript projects with multiple packages."
+    "description": "A tool for managing JavaScript projects with multiple npm packages."
   },
   {
     "name": "TSDX",
@@ -165,7 +165,7 @@
     "ring": "Adopt",
     "quadrant": "Techniques",
     "isNew": false,
-    "description": "Minimal bundle size - webpack / rollup?"
+    "description": "Tree shaking is a term commonly used in the JavaScript context for dead-code elimination. It relies on the static structure of ES2015 module syntax, i.e. import and export. The name and concept have been popularized by the ES2015 module bundler rollup."
   },
   {
     "name": "TurboRepo",
@@ -179,7 +179,7 @@
     "ring": "Explore",
     "quadrant": "Tools",
     "isNew": false,
-    "description": "build tool, fast build time"
+    "description": "Vite (French word for &quot;quick&quot;, pronounced /vit/, like &quot;veet&quot;) is a new breed of frontend build tool that significantly improves the frontend development experience."
   },
   {
     "name": "Webpack",
@@ -193,14 +193,14 @@
     "ring": "Endure",
     "quadrant": "Tools",
     "isNew": false,
-    "description": "npm/yarn move in same pace - choose npm if possible, use yarn otherwise"
+    "description": "Yarn is a package manager that doubles down as project manager. Whether you work on one-shot projects or large monorepos, as a hobbyist or an enterprise user, we&apos;ve got you covered. Note that npm/yarn move in same pace - choose npm if possible, use yarn otherwise."
   },
   {
     "name": "npm",
     "ring": "Adopt",
     "quadrant": "Tools",
     "isNew": false,
-    "description": "..excerpt also used in technology radar..."
+    "description": "npm is the package manager for the Node JavaScript platform. It puts modules in place so that node can find them, and manages dependency conflicts intelligently. It is extremely configurable to support a wide variety of use cases. Most commonly, it is used to publish, discover, install, and develop node programs."
   },
   {
     "name": "CSharp",
@@ -228,21 +228,21 @@
     "ring": "Adopt",
     "quadrant": "Tools",
     "isNew": false,
-    "description": "Analyze repository on code quality &amp; security"
+    "description": "SonarCloud helps you assess your code health and build applications with clean, safe code. Get fast and precise feedback in the cloud."
   },
   {
-    "name": "Ag-grid",
+    "name": "Ag Grid",
     "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "JavaScript grid"
+    "description": "AG Grid is a fully-featured and highly customizable JavaScript data grid. It delivers outstanding performance, has no 3rd party dependencies and integrates smoothly with React as React Component."
   },
   {
     "name": "Bootstrap",
     "ring": "Endure",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "Still the number 1 library for web UI&apos;s, especially useful for administrative screens."
+    "description": "Bootstrap is a popular CSS Framework for developing responsive and mobile-first websites. Bootstrap 5 is the newest version of Bootstrap. Still the number 1 library for web UI&apos;s, especially useful for administrative screens."
   },
   {
     "name": "Fluent UI",
@@ -263,7 +263,7 @@
     "ring": "Explore",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "Mobile app framework where developer can choose between React, Angular and Vue.js implementations"
+    "description": "Mobile app framework where developer can choose between React, Angular and Vue.js implementations."
   },
   {
     "name": "Material UI",
@@ -382,7 +382,7 @@
     "ring": "Adopt",
     "quadrant": "Platforms",
     "isNew": false,
-    "description": "Dutch company, local support, based on usage look at Azure Search"
+    "description": "Elasticsearch is a distributed, free and open search and analytics engine for all types of data, including textual, numerical, geospatial, structured, and unstructured. Cloud based version available on Azure. Dutch company."
   },
   {
     "name": "Full Stack devs",
@@ -396,14 +396,14 @@
     "ring": "Retire",
     "quadrant": "Tools",
     "isNew": false,
-    "description": "..excerpt also used in technology radar..."
+    "description": "Gatsby is an open-source framework that combines functionality from React, GraphQL and Webpack into a single tool for building static websites and apps"
   },
   {
     "name": "Git",
     "ring": "Adopt",
     "quadrant": "Tools",
     "isNew": false,
-    "description": "..excerpt also used in technology radar..."
+    "description": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."
   },
   {
     "name": "Google Analytics",
@@ -438,7 +438,7 @@
     "ring": "Adopt",
     "quadrant": "Techniques",
     "isNew": false,
-    "description": "Use image services like Kraken, ContentHub"
+    "description": "Use image services like Kraken, Cloudinary or ContentHub to optimize images, and act as a CDN for images."
   },
   {
     "name": "Internationalization",
@@ -452,14 +452,14 @@
     "ring": "Adopt",
     "quadrant": "Techniques",
     "isNew": false,
-    "description": "new standard for web architecture, CDN, Microservices"
+    "description": "JAMStack is the new standard for web architecture, CDN, Microservices."
   },
   {
     "name": "JavaScript 5",
     "ring": "Endure",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "JavaScript 5 is the &quot;old&quot; version of JavaScript as currently supported by browsers (mostly JavaScript 5).\nSee <a href=\"https://en.wikipedia.org/wiki/JavaScript\">https://en.wikipedia.org/wiki/JavaScript</a>. Good to be used directly on small projects where build tools and transpiling are overhead. We prefer the use of ES2015 and beyond and use Babel for transpiling so more modern an powerful JavaScript language features can be used."
+    "description": "JavaScript 5 is the &quot;old&quot; version of JavaScript as currently supported by browsers (mostly JavaScript 5)."
   },
   {
     "name": "Jest",
@@ -487,21 +487,21 @@
     "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "Used in Azure Functions and local prototypes and tooling"
+    "description": "Node.js is a single-threaded, open-source, cross-platform runtime environment for building fast and scalable server-side and networking applications. It runs on the V8 JavaScript runtime engine, and it uses event-driven, non-blocking I/O architecture, which makes it efficient and suitable for real-time applications."
   },
   {
-    "name": "OAuth2",
+    "name": "OAuth 2.0",
     "ring": "Adopt",
     "quadrant": "Techniques",
     "isNew": false,
-    "description": "Mostly used under the hood"
+    "description": "OAuth 2.0, which stands for &#x201C;Open Authorization&#x201D;, is a standard designed to allow a website or application to access resources hosted by other web apps on behalf of a user."
   },
   {
     "name": "PHP",
     "ring": "Endure",
     "quadrant": "Platforms",
     "isNew": false,
-    "description": "PHP is a popular general-purpose scripting language that is especially suited to web development."
+    "description": "PHP is a popular general-purpose scripting language that is especially suited to web development.\nFast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world."
   },
   {
     "name": "PWA",
@@ -592,7 +592,7 @@
     "ring": "Adopt",
     "quadrant": "Platforms",
     "isNew": false,
-    "description": "To use Sitecore as a headless platform. Use in combination with Next.js."
+    "description": "To use Sitecore as a headless platform. Use the Sitecore JavaScript Rendering SDK in combination with Next.js."
   },
   {
     "name": "Sitecore SXA",
@@ -606,7 +606,7 @@
     "ring": "Endure",
     "quadrant": "Platforms",
     "isNew": false,
-    "description": "Part of the Sitecore box, for custom search Adopt ElasticSearch"
+    "description": "Solr is the popular, blazing-fast, open source enterprise search platform built on Apache Lucene."
   },
   {
     "name": "Storybook",
@@ -627,35 +627,35 @@
     "ring": "Retire",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "Favor SASS over LESS."
+    "description": "It&apos;s CSS, with just a little more. Favor SASS over LESS."
   },
   {
     "name": "PostCSS",
     "ring": "Adopt",
     "quadrant": "Tools",
     "isNew": false,
-    "description": "..excerpt also used in technology radar..."
+    "description": "Transform CSS with the power of JavaScript. Auto-prefixing, future CSS syntaxes, modules, linting and more are possible with hundreds of PostCSS plugins."
   },
   {
     "name": "SASS",
     "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "SASS stands for Syntactically Awesome Style Sheets. SASS is a <a href=\"./CSS.md\">CSS</a> extension language, and is completely compatible with all versions of CSS.\ndescribes how HTML elements are to be displayed on screen, paper, or in other media."
+    "description": "SASS stands for Syntactically Awesome Style Sheets. SASS is a CSS extension language, and is completely compatible with all versions of CSS."
   },
   {
     "name": "TailwindCSS",
     "ring": "Explore",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "Utility-first CSS framework, small library"
+    "description": "A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup."
   },
   {
     "name": "TYPO3",
     "ring": "Endure",
     "quadrant": "Platforms",
     "isNew": false,
-    "description": "TYPO3 CMS is an Open Source Enterprise Content Management System\nin the PHP eco-system."
+    "description": "TYPO3 CMS is an Open Source Enterprise Content Management System in the PHP eco-system."
   },
   {
     "name": "Terminal",
@@ -676,7 +676,7 @@
     "ring": "Explore",
     "quadrant": "Techniques",
     "isNew": false,
-    "description": "Cypress"
+    "description": "In UI Testing an automated end-to-end testing framework is used to validate web applications across different browsers and platforms."
   },
   {
     "name": "Adobe XD",
@@ -718,14 +718,14 @@
     "ring": "Endure",
     "quadrant": "Tools",
     "isNew": false,
-    "description": "Used to deliver Sketch or Adobe DX designs. Mostly provided as a web based link to the developer."
+    "description": "Used to deliver Sketch or Adobe DX designs on the web. Mostly provided as a web based link to the developer."
   },
   {
     "name": "Unit tests",
     "ring": "Adopt",
     "quadrant": "Techniques",
     "isNew": false,
-    "description": "Jest, testing-library.com"
+    "description": "Unit tests are typically automated tests written and run by software developers to ensure that a section of an application (known as the &quot;unit&quot;) meets its design and behaves as intended."
   },
   {
     "name": "Visual Studio Code",
@@ -753,7 +753,7 @@
     "ring": "Explore",
     "quadrant": "Techniques",
     "isNew": false,
-    "description": "Blazer for example"
+    "description": "WebAssembly is a new type of code that can be run in modern web browsers &#x2014; it is a low-level assembly-like language with a compact binary format that runs with near-native performance and provides languages such as C/C++, C# and Rust with a compilation target so that they can run on the web. It is also designed to run alongside JavaScript, allowing both to work together."
   },
   {
     "name": "Web Components",
@@ -767,28 +767,28 @@
     "ring": "Explore",
     "quadrant": "Techniques",
     "isNew": false,
-    "description": "run scripts in background threads independently of user-interface scripts, they can perform I/O using XMLHttpRequest."
+    "description": "Run scripts in background threads independently of user-interface scripts, they can perform I/O using XMLHttpRequest."
   },
   {
     "name": "Websockets",
     "ring": "Explore",
     "quadrant": "Techniques",
     "isNew": false,
-    "description": "two way interactive communication between user&apos;s browser and server (fe. SocketIO)"
+    "description": "Two way real-time communication between the user&apos;s browser and the server."
   },
   {
     "name": "jQuery",
     "ring": "Retire",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "don&apos;t start another project with jQuery, except when innevitable on for example commerce projects or projects with out-of-the-box components."
+    "description": "As we all know, jQuery was a necessity with browsers of the past. Don&apos;t start another project with jQuery, except when innevitable on for example commerce projects or projects with out-of-the-box components that are already written using jQuery."
   },
   {
     "name": "React-Query",
     "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "server state library, Powerful and performant data synchronization between server and client"
+    "description": "Performant and powerful data synchronization for React. Fetch, cache and update data in your React and React Native applications all without touching any &quot;global state&quot;."
   },
   {
     "name": "Redux",
@@ -802,6 +802,6 @@
     "ring": "Explore",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": " id=\"details\">Details<"
+    "description": "JavaScript/TypeScript state machine, declarative description of application behavior."
   }
 ]
