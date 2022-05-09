@@ -7,6 +7,7 @@ Postman,Adopt,Tools,false,Postman is a REST API testing tool.
 ASP.NET for frontend,Endure,Platforms,false,"ASP.NET is an open source web framework, created by Microsoft, for building modern web apps and services that run on macOS, Linux, Windows, and Docker. It can be used to build web frontends using Razor."
 Angular,Endure,Languages and Frameworks,false,A component-based framework for building scalable SPA&apos;s..
 Azure Core,Adopt,Platforms,false,..excerpt also used in technology radar...
+Azure API Management,Adopt,Platforms,false,"Azure API Management is a reliable, secure and scalable way to publish, consume and manage APIs running on Microsoft Azure platform. Azure API Management provides all essential tools required for an end-to-end management of APIs. Use it to publish APIs to external, partner, and employee developers securely and at scale."
 Azure Active Directory,Adopt,Platforms,false,Azure Active Directory (Azure AD) is a cloud-based identity and access management service.
 Azure App Configuration,Adopt,Platforms,false,Azure App Configuration provides a service to centrally manage application settings and feature flags.
 Azure App Service,Adopt,Platforms,false,"Azure Web Apps is a cloud computing based platform for hosting websites, created and operated by Microsoft. It is a platform as a service which allows publishing Web apps running on multiple frameworks and written in different programming languages."
@@ -16,11 +17,13 @@ Azure Functions,Adopt,Platforms,false,"Azure Functions is a cloud service availa
 Azure Key Vault,Adopt,Platforms,false,"Azure Key Vault is a cloud service for securely storing and accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, or cryptographic keys."
 Azure Storage,Adopt,Platforms,false,"The Azure Storage platform is Microsoft&apos;s cloud storage solution for modern data storage scenarios. Azure Storage offers highly available, massively scalable, durable, and secure storage for a variety of data objects in the cloud."
 Azure Static Web Apps,Explore,Platforms,false,Azure Static Web Apps is a service that automatically builds and deploys full stack web apps to Azure from a code repository. The workflow of Azure Static Web Apps is tailored to a developer&apos;s daily workflow. Apps are built and deployed based off code changes.
-Build tooling,Adopt,Tools,false,"...excerpt, also used in radar..."
+Build Automation,Adopt,Tools,false,Build Automation is tooling to automate the build and deployment process.
+Build Tooling,Adopt,Tools,false,Any codebase containing TypeScript and SASS need build tooling to do transpilation and bundling.
 Code splitting,Adopt,Techniques,false,"Code splitting is the splitting of code into various bundles or components which can then be loaded on demand or in parallel. As an application grows in complexity or is maintained, CSS and JavaScript files or bundles grow in byte size, especially as the number and size of included third-party libraries increases."
 Grunt,Retire,Tools,false,A build tool from the dark ages.
 Gulp,Endure,Tools,false,"Leverage Gulp and the flexibility of JavaScript to automate slow, repetitive workflows and compose them into efficient build pipelines."
 Lerna,Adopt,Tools,false,A tool for managing JavaScript projects with multiple npm packages.
+Nx,Explore,Tools,false, Next generation build system with first class monorepo support and powerful integrations.
 TSDX,Explore,Tools,false,Zero-config CLI for TypeScript package development.
 Tree Shaking,Adopt,Techniques,false,"Tree shaking is a term commonly used in the JavaScript context for dead-code elimination. It relies on the static structure of ES2015 module syntax, i.e. import and export. The name and concept have been popularized by the ES2015 module bundler rollup."
 TurboRepo,Explore,Tools,false,Turborepo is a high-performance build system for JavaScript and TypeScript codebases.
