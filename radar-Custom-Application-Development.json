@@ -56,6 +56,13 @@
     "description": "..excerpt also used in technology radar..."
   },
   {
+    "name": "Azure API Management",
+    "ring": "Adopt",
+    "quadrant": "Platforms",
+    "isNew": false,
+    "description": "Azure API Management is a reliable, secure and scalable way to publish, consume and manage APIs running on Microsoft Azure platform. Azure API Management provides all essential tools required for an end-to-end management of APIs. Use it to publish APIs to external, partner, and employee developers securely and at scale."
+  },
+  {
     "name": "Azure Active Directory",
     "ring": "Adopt",
     "quadrant": "Platforms",
@@ -119,11 +126,18 @@
     "description": "Azure Static Web Apps is a service that automatically builds and deploys full stack web apps to Azure from a code repository. The workflow of Azure Static Web Apps is tailored to a developer&apos;s daily workflow. Apps are built and deployed based off code changes."
   },
   {
-    "name": "Build tooling",
+    "name": "Build Automation",
     "ring": "Adopt",
     "quadrant": "Tools",
     "isNew": false,
-    "description": "...excerpt, also used in radar..."
+    "description": "Build Automation is tooling to automate the build and deployment process."
+  },
+  {
+    "name": "Build Tooling",
+    "ring": "Adopt",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "Any codebase containing TypeScript and SASS need build tooling to do transpilation and bundling."
   },
   {
     "name": "Code splitting",
@@ -152,6 +166,13 @@
     "quadrant": "Tools",
     "isNew": false,
     "description": "A tool for managing JavaScript projects with multiple npm packages."
+  },
+  {
+    "name": "Nx",
+    "ring": "Explore",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": " Next generation build system with first class monorepo support and powerful integrations."
   },
   {
     "name": "TSDX",
