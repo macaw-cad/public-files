@@ -172,7 +172,7 @@
     "ring": "Explore",
     "quadrant": "Tools",
     "isNew": false,
-    "description": " Next generation build system with first class monorepo support and powerful integrations."
+    "description": "Next generation build system with first class monorepo support and powerful integrations."
   },
   {
     "name": "TSDX",
