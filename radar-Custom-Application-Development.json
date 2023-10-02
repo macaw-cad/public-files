@@ -1,14 +1,7 @@
 [
   {
-    "name": "APIs",
-    "ring": "Adopt",
-    "quadrant": "Platforms",
-    "isNew": false,
-    "description": "APIs (Application Programming Interfaces) are the set of functions that are exposed to the outside world."
-  },
-  {
     "name": "GraphQL",
-    "ring": "Explore",
+    "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools."
@@ -22,7 +15,7 @@
   },
   {
     "name": "OData",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "Open Data Protocol (OData) is an open protocol that allows the creation and consumption of queryable and interoperable REST APIs in a simple and standard way. Microsoft initiated OData in 2007"
@@ -36,14 +29,14 @@
   },
   {
     "name": "ASP.NET for frontend",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Platforms",
     "isNew": false,
     "description": "ASP.NET is an open source web framework, created by Microsoft, for building modern web apps and services that run on macOS, Linux, Windows, and Docker. It can be used to build web frontends using Razor."
   },
   {
     "name": "Angular",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "A component-based framework for building scalable SPA&apos;s.."
@@ -120,7 +113,7 @@
   },
   {
     "name": "Azure Static Web Apps",
-    "ring": "Explore",
+    "ring": "Trial",
     "quadrant": "Platforms",
     "isNew": false,
     "description": "Azure Static Web Apps is a service that automatically builds and deploys full stack web apps to Azure from a code repository. The workflow of Azure Static Web Apps is tailored to a developer&apos;s daily workflow. Apps are built and deployed based off code changes."
@@ -148,14 +141,14 @@
   },
   {
     "name": "Grunt",
-    "ring": "Retire",
+    "ring": "Hold",
     "quadrant": "Tools",
     "isNew": false,
     "description": "A build tool from the dark ages."
   },
   {
     "name": "Gulp",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Tools",
     "isNew": false,
     "description": "Leverage Gulp and the flexibility of JavaScript to automate slow, repetitive workflows and compose them into efficient build pipelines."
@@ -169,14 +162,14 @@
   },
   {
     "name": "Nx",
-    "ring": "Explore",
+    "ring": "Trial",
     "quadrant": "Tools",
     "isNew": false,
     "description": "Next generation build system with first class monorepo support and powerful integrations."
   },
   {
     "name": "TSDX",
-    "ring": "Explore",
+    "ring": "Trial",
     "quadrant": "Tools",
     "isNew": false,
     "description": "Zero-config CLI for TypeScript package development."
@@ -190,14 +183,14 @@
   },
   {
     "name": "TurboRepo",
-    "ring": "Explore",
+    "ring": "Adopt",
     "quadrant": "Tools",
     "isNew": false,
     "description": "Turborepo is a high-performance build system for JavaScript and TypeScript codebases."
   },
   {
     "name": "Vite",
-    "ring": "Explore",
+    "ring": "Trial",
     "quadrant": "Tools",
     "isNew": false,
     "description": "Vite (French word for &quot;quick&quot;, pronounced /vit/, like &quot;veet&quot;) is a new breed of frontend build tool that significantly improves the frontend development experience."
@@ -211,7 +204,7 @@
   },
   {
     "name": "Yarn",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Tools",
     "isNew": false,
     "description": "Yarn is a package manager that doubles down as project manager. Whether you work on one-shot projects or large monorepos, as a hobbyist or an enterprise user, we&apos;ve got you covered. Note that npm/yarn move in same pace - choose npm if possible, use yarn otherwise."
@@ -232,7 +225,7 @@
   },
   {
     "name": "ESLint",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Tools",
     "isNew": false,
     "description": "Find and fix problems in your JavaScript and TypeScript code."
@@ -260,7 +253,7 @@
   },
   {
     "name": "Bootstrap",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "Bootstrap is a popular CSS Framework for developing responsive and mobile-first websites. Bootstrap 5 is the newest version of Bootstrap. Still the number 1 library for web UI&apos;s, especially useful for administrative screens."
@@ -274,14 +267,14 @@
   },
   {
     "name": "Formik",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "React form builder, prefer react-hook-form or react-json-schema-form over Formik."
   },
   {
     "name": "Ionic framework",
-    "ring": "Explore",
+    "ring": "Assess",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "Mobile app framework where developer can choose between React, Angular and Vue.js implementations."
@@ -344,7 +337,7 @@
   },
   {
     "name": "Moment.js",
-    "ring": "Retire",
+    "ring": "Hold",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "The date/time formatting library of the past. Refactor this library out of your code-base when possible."
@@ -358,7 +351,7 @@
   },
   {
     "name": "Deno",
-    "ring": "Explore",
+    "ring": "Assess",
     "quadrant": "Tools",
     "isNew": false,
     "description": "JavaScript/TypeScript runtime built in Rust, secure, supports TypeScript out of the box"
@@ -393,7 +386,7 @@
   },
   {
     "name": "ESNext",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "The new version of JavaScript with way more powerful language constructs."
@@ -414,7 +407,7 @@
   },
   {
     "name": "Gatsby",
-    "ring": "Retire",
+    "ring": "Hold",
     "quadrant": "Tools",
     "isNew": false,
     "description": "Gatsby is an open-source framework that combines functionality from React, GraphQL and Webpack into a single tool for building static websites and apps"
@@ -477,7 +470,7 @@
   },
   {
     "name": "JavaScript 5",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "JavaScript 5 is the &quot;old&quot; version of JavaScript as currently supported by browsers (mostly JavaScript 5)."
@@ -491,7 +484,7 @@
   },
   {
     "name": "KeystoneJS",
-    "ring": "Explore",
+    "ring": "Assess",
     "quadrant": "Platforms",
     "isNew": false,
     "description": "Keystone helps you build faster and scale further than any other CMS or App Framework. Just describe your schema, and get a powerful GraphQL API &amp; beautiful Management UI for content and data."
@@ -519,7 +512,7 @@
   },
   {
     "name": "PHP",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Platforms",
     "isNew": false,
     "description": "PHP is a popular general-purpose scripting language that is especially suited to web development.\nFast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world."
@@ -561,7 +554,7 @@
   },
   {
     "name": "Remix",
-    "ring": "Explore",
+    "ring": "Assess",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "Remix is a full stack web framework that lets you focus on the user interface and work back through web fundamentals to deliver a fast, slick, and resilient user experience."
@@ -603,7 +596,7 @@
   },
   {
     "name": "Sitecore Experience Edge",
-    "ring": "Explore",
+    "ring": "Adopt",
     "quadrant": "Platforms",
     "isNew": false,
     "description": "Headless content delivery, available with Content Hub or Sitecore XM (Cloud)."
@@ -617,17 +610,24 @@
   },
   {
     "name": "Sitecore SXA",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Platforms",
     "isNew": false,
     "description": "This was the prefered platform for out of the box Sitecore implementations."
   },
   {
     "name": "Solr",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Platforms",
     "isNew": false,
     "description": "Solr is the popular, blazing-fast, open source enterprise search platform built on Apache Lucene."
+  },
+  {
+    "name": "Stencil.js",
+    "ring": "Adopt",
+    "quadrant": "Languages and Frameworks",
+    "isNew": false,
+    "description": "Stencil is a library for building reusable, scalable component libraries. Generate small, blazing fast Web Components that run everywhere."
   },
   {
     "name": "Storybook",
@@ -645,7 +645,7 @@
   },
   {
     "name": "LESS",
-    "ring": "Retire",
+    "ring": "Hold",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "It&apos;s CSS, with just a little more. Favor SASS over LESS."
@@ -666,14 +666,14 @@
   },
   {
     "name": "TailwindCSS",
-    "ring": "Explore",
+    "ring": "Trial",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup."
   },
   {
     "name": "TYPO3",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Platforms",
     "isNew": false,
     "description": "TYPO3 CMS is an Open Source Enterprise Content Management System in the PHP eco-system."
@@ -694,21 +694,21 @@
   },
   {
     "name": "UI Testing",
-    "ring": "Explore",
+    "ring": "Trial",
     "quadrant": "Techniques",
     "isNew": false,
     "description": "In UI Testing an automated end-to-end testing framework is used to validate web applications across different browsers and platforms."
   },
   {
     "name": "Adobe XD",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Tools",
     "isNew": false,
     "description": "Used to deliver designs."
   },
   {
     "name": "Axure",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Tools",
     "isNew": false,
     "description": "Used to deliver wireframes and mockups. Mostly provided as a web based link to the developer."
@@ -722,21 +722,21 @@
   },
   {
     "name": "InVision for developers",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Tools",
     "isNew": false,
     "description": "InVision is a prototyping tool created for designers, by designers. It allows you to quickly and easily create interactive mockups for your designs."
   },
   {
     "name": "Sketch for developers",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Tools",
     "isNew": false,
     "description": "Sketch is the all-in-one platform for digital design &#x2014; with collaborative design tools, prototyping and developer handoff."
   },
   {
     "name": "Zeplin",
-    "ring": "Endure",
+    "ring": "Hold",
     "quadrant": "Tools",
     "isNew": false,
     "description": "Used to deliver Sketch or Adobe DX designs on the web. Mostly provided as a web based link to the developer."
@@ -757,21 +757,21 @@
   },
   {
     "name": "VueJS",
-    "ring": "Retire",
+    "ring": "Hold",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "Progressive JavaScript Framework for building websites and web applications."
   },
   {
     "name": "A11Y and ARIA",
-    "ring": "Explore",
+    "ring": "Trial",
     "quadrant": "Techniques",
     "isNew": false,
     "description": "Accessibility, Adobe React Aria"
   },
   {
     "name": "Web Assembly",
-    "ring": "Explore",
+    "ring": "Trial",
     "quadrant": "Techniques",
     "isNew": false,
     "description": "WebAssembly is a new type of code that can be run in modern web browsers &#x2014; it is a low-level assembly-like language with a compact binary format that runs with near-native performance and provides languages such as C/C++, C# and Rust with a compilation target so that they can run on the web. It is also designed to run alongside JavaScript, allowing both to work together."
@@ -785,21 +785,21 @@
   },
   {
     "name": "Web workers",
-    "ring": "Explore",
+    "ring": "Trial",
     "quadrant": "Techniques",
     "isNew": false,
     "description": "Run scripts in background threads independently of user-interface scripts, they can perform I/O using XMLHttpRequest."
   },
   {
     "name": "Websockets",
-    "ring": "Explore",
+    "ring": "Trial",
     "quadrant": "Techniques",
     "isNew": false,
     "description": "Two way real-time communication between the user&apos;s browser and the server."
   },
   {
     "name": "jQuery",
-    "ring": "Retire",
+    "ring": "Hold",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "As we all know, jQuery was a necessity with browsers of the past. Don&apos;t start another project with jQuery, except when innevitable on for example commerce projects or projects with out-of-the-box components that are already written using jQuery."
@@ -820,7 +820,7 @@
   },
   {
     "name": "XState",
-    "ring": "Explore",
+    "ring": "Trial",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "JavaScript/TypeScript state machine, declarative description of application behavior."
