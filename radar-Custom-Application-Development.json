@@ -386,7 +386,7 @@
   },
   {
     "name": "ESNext",
-    "ring": "Hold",
+    "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "The new version of JavaScript with way more powerful language constructs."
@@ -626,8 +626,8 @@
     "name": "Stencil.js",
     "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
-    "isNew": false,
-    "description": "Stencil is a library for building reusable, scalable component libraries. Generate small, blazing fast Web Components that run everywhere."
+    "isNew": true,
+    "description": "Stencil.js is a web component compiler that allows developers to create reusable, composable components for the web using modern web standards such as TypeScript, JSX, and CSS Variables."
   },
   {
     "name": "Storybook",
