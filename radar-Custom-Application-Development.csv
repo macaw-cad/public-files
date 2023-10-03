@@ -54,7 +54,7 @@ Dev containers,Adopt,Techniques,false,Developing inside a container to ensure an
 DDEV,Adopt,Tools,false,DDEV is an open source tool that makes it dead simple to get local PHP development environments up and running within minutes by utilizing Docker containers.
 VSCode Dev Containers,Adopt,Tools,false,Use VSCode together with a Docker container as a full-featured development environment.
 Docker containers,Adopt,Platforms,false,"For unit of deployment, linux, Azure Web Apps / kubernetes"
-ESNext,Hold,Languages and Frameworks,false,The new version of JavaScript with way more powerful language constructs.
+ESNext,Adopt,Languages and Frameworks,false,The new version of JavaScript with way more powerful language constructs.
 ElasticSearch,Adopt,Platforms,false,"Elasticsearch is a distributed, free and open search and analytics engine for all types of data, including textual, numerical, geospatial, structured, and unstructured. Cloud based version available on Azure. Dutch company."
 Full Stack devs,Adopt,Techniques,false,Don&apos;t be scared of install complete platform and edit Razor views
 Gatsby,Hold,Tools,false,"Gatsby is an open-source framework that combines functionality from React, GraphQL and Webpack into a single tool for building static websites and apps"
@@ -89,7 +89,7 @@ Sitecore Experience Edge,Adopt,Platforms,false,"Headless content delivery, avail
 Sitecore JSS,Adopt,Platforms,false,To use Sitecore as a headless platform. Use the Sitecore JavaScript Rendering SDK in combination with Next.js.
 Sitecore SXA,Hold,Platforms,false,This was the prefered platform for out of the box Sitecore implementations.
 Solr,Hold,Platforms,false,"Solr is the popular, blazing-fast, open source enterprise search platform built on Apache Lucene."
-Stencil.js,Adopt,Languages and Frameworks,false,"Stencil is a library for building reusable, scalable component libraries. Generate small, blazing fast Web Components that run everywhere."
+Stencil.js,Adopt,Languages and Frameworks,true,"Stencil.js is a web component compiler that allows developers to create reusable, composable components for the web using modern web standards such as TypeScript, JSX, and CSS Variables."
 Storybook,Adopt,Tools,false,Show your components in isolation and out of context.
 CSS,Adopt,Languages and Frameworks,false,"Cascading Style Sheets (CSS) is a simple mechanism for adding style (e.g., fonts, colors, spacing) to Web documents."
 LESS,Hold,Languages and Frameworks,false,"It&apos;s CSS, with just a little more. Favor SASS over LESS."
