@@ -672,6 +672,13 @@
     "description": "A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup."
   },
   {
+    "name": "Vanilla Extract",
+    "ring": "Adopt",
+    "quadrant": "Languages and Frameworks",
+    "isNew": true,
+    "description": "Vanilla Extract: A type-safe CSS-in-JS solution offering themes, variables, and styles through TypeScript."
+  },
+  {
     "name": "TYPO3",
     "ring": "Hold",
     "quadrant": "Platforms",
@@ -761,6 +768,13 @@
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "Progressive JavaScript Framework for building websites and web applications."
+  },
+  {
+    "name": "WSL for full-stack development",
+    "ring": "Adopt",
+    "quadrant": "Techniques",
+    "isNew": true,
+    "description": "WSL for full-stack development: Leveraging the Windows Subsystem for Linux to facilitate full-stack development workflows on Windows."
   },
   {
     "name": "A11Y and ARIA",
