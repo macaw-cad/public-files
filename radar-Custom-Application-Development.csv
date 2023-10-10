@@ -96,6 +96,7 @@ LESS,Hold,Languages and Frameworks,false,"It&apos;s CSS, with just a little more
 PostCSS,Adopt,Tools,false,"Transform CSS with the power of JavaScript. Auto-prefixing, future CSS syntaxes, modules, linting and more are possible with hundreds of PostCSS plugins."
 SASS,Adopt,Languages and Frameworks,false,"SASS stands for Syntactically Awesome Style Sheets. SASS is a CSS extension language, and is completely compatible with all versions of CSS."
 TailwindCSS,Trial,Languages and Frameworks,false,"A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup."
+Vanilla Extract,Adopt,Languages and Frameworks,true,"Vanilla Extract: A type-safe CSS-in-JS solution offering themes, variables, and styles through TypeScript."
 TYPO3,Hold,Platforms,false,TYPO3 CMS is an Open Source Enterprise Content Management System in the PHP eco-system.
 Terminal,Adopt,Tools,false,"Commandline tooling, CLI&apos;s"
 TypeScript,Adopt,Languages and Frameworks,false,"TypeScript is JavaScript with syntax for types. TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale."
@@ -109,6 +110,7 @@ Zeplin,Hold,Tools,false,Used to deliver Sketch or Adobe DX designs on the web. M
 Unit tests,Adopt,Techniques,false,Unit tests are typically automated tests written and run by software developers to ensure that a section of an application (known as the &quot;unit&quot;) meets its design and behaves as intended.
 Visual Studio Code,Adopt,Tools,false,"Visual Studio Code is a free coding editor that helps you start coding quickly. Use it to code in any programming language, without switching editors."
 VueJS,Hold,Languages and Frameworks,false,Progressive JavaScript Framework for building websites and web applications.
+WSL for full-stack development,Adopt,Techniques,true,WSL for full-stack development: Leveraging the Windows Subsystem for Linux to facilitate full-stack development workflows on Windows.
 A11Y and ARIA,Trial,Techniques,false,"Accessibility, Adobe React Aria"
 Web Assembly,Trial,Techniques,false,"WebAssembly is a new type of code that can be run in modern web browsers &#x2014; it is a low-level assembly-like language with a compact binary format that runs with near-native performance and provides languages such as C/C++, C# and Rust with a compilation target so that they can run on the web. It is also designed to run alongside JavaScript, allowing both to work together."
 Web Components,Adopt,Languages and Frameworks,false,"Already using it in projects, see StencilJS as framework. Great alternative way of working with components in Sitecore SXA"
