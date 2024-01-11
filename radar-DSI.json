@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Azure Data Factory",
+    "ring": "Adopt",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "In our projects, we primarily use Azure Data Factory as an orchestration tool and for data ingestion in certain scenarios. This tool is particularly important for Data Engineers, but it&apos;s also beneficial for Power BI developers to understand, considering its significant role in Fabric."
+  },
+  {
+    "name": "Azure Data Lake Storage",
+    "ring": "Adopt",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "Azure Data Lake Storage (ADLS) is a highly scalable and secure data lake that allows for big data analytics and storage. It supports various data types and integrates seamlessly with Azure&apos;s analytics services."
+  },
+  {
+    "name": "Azure Databricks",
+    "ring": "Adopt",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "Azure Databricks: A unified analytics platform powered by Apache Spark."
+  },
+  {
+    "name": "Azure DevOps",
+    "ring": "Adopt",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "Azure DevOps is a suite of development tools from Microsoft, supporting a wide range of software development processes."
+  },
+  {
+    "name": "Azure Event Hubs",
+    "ring": "Assess",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "Azure Event Hubs: A Scalable Data Ingestion Service"
+  },
+  {
+    "name": "Azure IoT Hub",
+    "ring": "Assess",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "A cloud-based service enabling secure, bidirectional communication between IoT devices and applications."
+  },
+  {
+    "name": "Azure Logic Apps",
+    "ring": "Assess",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "Azure Logic Apps: Cloud-Based Integration Service"
+  },
+  {
+    "name": "Azure SQL Database",
+    "ring": "Adopt",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "A flexible, cloud-based relational database service from Microsoft, optimized for building cloud-native applications with managed services for scalability, security, and performance."
+  },
+  {
+    "name": "Azure Storage",
+    "ring": "Adopt",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "The Azure Storage is Microsoft&apos;s cloud storage solution for modern data storage scenarios."
+  },
+  {
+    "name": "Azure Stream Analytics",
+    "ring": "Assess",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "A real-time analytics and complex event-processing platform that integrates with Azure IoT Suite."
+  },
+  {
+    "name": "Azure Synapse Analytics",
+    "ring": "Hold",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "A unified analytics platform that combines big data and data warehousing for seamless integration and analysis of data. Though it&apos;s important to note that this technology may be phased out with the advent of Fabric."
+  },
+  {
+    "name": "DevOps",
+    "ring": "Adopt",
+    "quadrant": "Techniques",
+    "isNew": false,
+    "description": "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery with high software quality. As a concept and practice, it doesn&apos;t fit neatly into a single category of a technology radar like &quot;Platforms,&quot; &quot;Techniques,&quot; &quot;Languages &amp; Frameworks,&quot; or &quot;Tools,&quot; because it encompasses aspects of several categories:"
+  },
+  {
+    "name": "Fabric",
+    "ring": "Adopt",
+    "quadrant": "Tools",
+    "isNew": true,
+    "description": "Microsoft Fabric is an all-in-one analytics solution for enterprises covering data movement, data science, Real-Time Analytics, and business intelligence."
+  },
+  {
+    "name": "Macaw Data Factory (MDF)",
+    "ring": "Hold",
+    "quadrant": "Languages and Frameworks",
+    "isNew": false,
+    "description": "Macaw Data Framework or MDF, is an earlier, deprecated version of the SDP. Currently most likley no longer relevant except in case of legacy clients."
+  },
+  {
+    "name": "Profisee",
+    "ring": "Trial",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "Profisee is a modern data management technology used for master data management (MDM). It enables organizations to create a single source of truth for their master data."
+  },
+  {
+    "name": "Microsoft Purview",
+    "ring": "Trial",
+    "quadrant": "Tools",
+    "isNew": false,
+    "description": "Microsoft Purview is a unified data governance service that helps organizations manage and govern their on-premises, multi-cloud, and software-as-a-service (SaaS) data. It enables data discovery, classification, and protection."
+  },
+  {
+    "name": "SQL",
+    "ring": "Adopt",
+    "quadrant": "Languages and Frameworks",
+    "isNew": false,
+    "description": "SQL (Structured Query Language) is a powerful language for managing and manipulating databases."
+  },
+  {
+    "name": "T-SQL",
+    "ring": "Adopt",
+    "quadrant": "Languages and Frameworks",
+    "isNew": false,
+    "description": "T-SQL: Microsoft&apos;s Extension to SQL for Advanced Database Management"
+  }
+]
