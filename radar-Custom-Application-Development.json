@@ -658,6 +658,13 @@
     "description": "Transform CSS with the power of JavaScript. Auto-prefixing, future CSS syntaxes, modules, linting and more are possible with hundreds of PostCSS plugins."
   },
   {
+    "name": "Radix-UI",
+    "ring": "Adopt",
+    "quadrant": "Languages and Frameworks",
+    "isNew": true,
+    "description": "Radix UI: A low-level UI primitive toolkit for building accessible design systems without sacrificing style."
+  },
+  {
     "name": "SASS",
     "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
