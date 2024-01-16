@@ -77,6 +77,27 @@
     "description": "A unified analytics platform that combines big data and data warehousing for seamless integration and analysis of data. Though it&apos;s important to note that this technology may be phased out with the advent of Fabric."
   },
   {
+    "name": "CI / CD",
+    "ring": "Adopt",
+    "quadrant": "Techniques",
+    "isNew": false,
+    "description": "CI/CD stands for Continuous Integration/Continuous Deployment, a method to frequently deliver apps to customers by introducing automation into the stages of app development."
+  },
+  {
+    "name": "Data Governance",
+    "ring": "Trial",
+    "quadrant": "Techniques",
+    "isNew": false,
+    "description": "Data Governance refers to the overall management of the availability, usability, integrity, and security of data used in an organization. It encompasses the processes, policies, standards, and metrics that ensure effective and efficient use of information in enabling an organization to achieve its goals."
+  },
+  {
+    "name": "Data Modelling",
+    "ring": "Adopt",
+    "quadrant": "Techniques",
+    "isNew": false,
+    "description": "Data modelling involves creating a conceptual representation of data objects and their relationships, typically for database design. It&apos;s a key skill in database management, ensuring data is stored efficiently and accurately."
+  },
+  {
     "name": "DevOps",
     "ring": "Adopt",
     "quadrant": "Techniques",
@@ -95,7 +116,7 @@
     "ring": "Hold",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "Macaw Data Framework or MDF, is an earlier, deprecated version of the SDP. Currently most likley no longer relevant except in case of legacy clients."
+    "description": "Macaw Data Factory or MDF, is an earlier, deprecated version of the SDP. Currently most likley no longer relevant except in case of legacy clients."
   },
   {
     "name": "Profisee",
@@ -117,6 +138,13 @@
     "quadrant": "Languages and Frameworks",
     "isNew": false,
     "description": "SQL (Structured Query Language) is a powerful language for managing and manipulating databases."
+  },
+  {
+    "name": "Scrum & Agile",
+    "ring": "Adopt",
+    "quadrant": "Techniques",
+    "isNew": false,
+    "description": "Scrum &amp; Agile methodologies are frameworks for managing and completing complex projects. They emphasize iterative progress, collaboration, and flexibility to adapt to changes."
   },
   {
     "name": "T-SQL",
