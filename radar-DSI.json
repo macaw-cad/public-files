@@ -11,7 +11,7 @@
     "ring": "Adopt",
     "quadrant": "Tools",
     "isNew": false,
-    "description": "Azure Data Lake Storage (ADLS) is a highly scalable and secure data lake that allows for big data analytics and storage. It supports various data types and integrates seamlessly with Azure&apos;s analytics services."
+    "description": "Azure Data Lake Storage (ADLS) is a highly scalable and secure data lake that allows for data analytics and storage. It supports various data types and integrates seamlessly with Azure&apos;s analytics services."
   },
   {
     "name": "Azure Databricks",
@@ -56,25 +56,11 @@
     "description": "A flexible, cloud-based relational database service from Microsoft, optimized for building cloud-native applications with managed services for scalability, security, and performance."
   },
   {
-    "name": "Azure Storage",
-    "ring": "Adopt",
-    "quadrant": "Tools",
-    "isNew": false,
-    "description": "The Azure Storage is Microsoft&apos;s cloud storage solution for modern data storage scenarios."
-  },
-  {
     "name": "Azure Stream Analytics",
     "ring": "Assess",
     "quadrant": "Tools",
     "isNew": false,
     "description": "A real-time analytics and complex event-processing platform that integrates with Azure IoT Suite."
-  },
-  {
-    "name": "Azure Synapse Analytics",
-    "ring": "Hold",
-    "quadrant": "Tools",
-    "isNew": false,
-    "description": "A unified analytics platform that combines big data and data warehousing for seamless integration and analysis of data. Though it&apos;s important to note that this technology may be phased out with the advent of Fabric."
   },
   {
     "name": "CI / CD",
@@ -88,7 +74,7 @@
     "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "DAX is a powerful language used in Microsoft Power BI, SQL Server Analysis Services, and Power Pivot in Excel for data modeling and analysis."
+    "description": "( for movement to TC2 or BC2 this skil should be to the stadard of the level of PS3 and TS3)"
   },
   {
     "name": "Data Governance",
@@ -109,7 +95,14 @@
     "ring": "Adopt",
     "quadrant": "Techniques",
     "isNew": false,
-    "description": "Data modelling involves creating a conceptual representation of data objects and their relationships, typically for database design. It&apos;s a key skill in database management, ensuring data is stored efficiently and accurately."
+    "description": "Data modelling involves creating a conceptual representation of data objects and their relationships, typically for the purpose of database design. It is an essential skill in database management, ensuring that data is stored both efficiently and accurately."
+  },
+  {
+    "name": "Data Modelling",
+    "ring": "Adopt",
+    "quadrant": "Techniques",
+    "isNew": false,
+    "description": "Data modelling involves creating a conceptual or physical representation of data objects and their relationships, typically for database design. It&apos;s a key skill in database management, ensuring data is stored efficiently and accurately."
   },
   {
     "name": "Data Visualization",
@@ -123,7 +116,7 @@
     "ring": "Adopt",
     "quadrant": "Techniques",
     "isNew": false,
-    "description": "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery with high software quality. As a concept and practice, it doesn&apos;t fit neatly into a single category of a technology radar like &quot;Platforms,&quot; &quot;Techniques,&quot; &quot;Languages &amp; Frameworks,&quot; or &quot;Tools,&quot; because it encompasses aspects of several categories:"
+    "description": "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous integration and delivery with high software quality."
   },
   {
     "name": "Fabric Admin Portal",
@@ -196,13 +189,6 @@
     "description": "Microsoft Purview is a unified data governance service that helps organizations manage and govern their on-premises, multi-cloud, and software-as-a-service (SaaS) data. It enables data discovery, classification, and protection."
   },
   {
-    "name": "Python",
-    "ring": "Adopt",
-    "quadrant": "Languages and Frameworks",
-    "isNew": false,
-    "description": "Python Programming Language"
-  },
-  {
     "name": "Requirements Definition and Management",
     "ring": "Adopt",
     "quadrant": "Techniques",
@@ -245,11 +231,18 @@
     "description": "Our main focus for the data platform. The Macaw Gold Standard constantly evolving. Will be a Fabric and Databricks flavoured solution."
   },
   {
+    "name": "SparkSQL",
+    "ring": "Adopt",
+    "quadrant": "Languages and Frameworks",
+    "isNew": false,
+    "description": "SparkSQL is a module in Apache Spark for processing structured data using SQL and DataFrame APIs."
+  },
+  {
     "name": "T-SQL",
     "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
     "isNew": false,
-    "description": "T-SQL: Microsoft&apos;s Extension to SQL for Advanced Database Management"
+    "description": "TSQL: Microsoft SQL Server&apos;s Powerful Extension"
   },
   {
     "name": "UX Design",
