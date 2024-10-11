@@ -700,6 +700,13 @@
     "description": "Commandline tooling, CLI&apos;s"
   },
   {
+    "name": "Vitest",
+    "ring": "Adopt",
+    "quadrant": "Languages and Frameworks",
+    "isNew": false,
+    "description": "Testing library to describe your test. When you add jest-dom you can use Jest assertions."
+  },
+  {
     "name": "TypeScript",
     "ring": "Adopt",
     "quadrant": "Languages and Frameworks",
