@@ -624,7 +624,7 @@
   },
   {
     "name": "Stencil.js",
-    "ring": "Adopt",
+    "ring": "Hold",
     "quadrant": "Languages and Frameworks",
     "isNew": true,
     "description": "Stencil.js is a web component compiler that allows developers to create reusable, composable components for the web using modern web standards such as TypeScript, JSX, and CSS Variables."
