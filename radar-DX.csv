@@ -100,6 +100,7 @@ TailwindCSS,Trial,Languages and Frameworks,false,"A utility-first CSS framework 
 Vanilla Extract,Adopt,Languages and Frameworks,true,"Vanilla Extract: A type-safe CSS-in-JS solution offering themes, variables, and styles through TypeScript."
 TYPO3,Hold,Platforms,false,TYPO3 CMS is an Open Source Enterprise Content Management System in the PHP eco-system.
 Terminal,Adopt,Tools,false,"Commandline tooling, CLI&apos;s"
+Vitest,Adopt,Languages and Frameworks,false,Testing library to describe your test. When you add jest-dom you can use Jest assertions.
 TypeScript,Adopt,Languages and Frameworks,false,"TypeScript is JavaScript with syntax for types. TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale."
 UI Testing,Trial,Techniques,false,In UI Testing an automated end-to-end testing framework is used to validate web applications across different browsers and platforms.
 Adobe XD,Hold,Tools,false,Used to deliver designs.
